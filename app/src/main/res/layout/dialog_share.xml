@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparenc"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="300dp"
+        android:background="@drawable/share">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/share_arrive"
+            android:textColor="@color/text_19"
+            android:textSize="15sp" />
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_text"
+            android:layout_marginBottom="13dp"
+            android:layout_marginTop="13dp"
+            android:gravity="center"
+            android:listSelector="@null"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="21dp"></GridView>
+
+        <ImageView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/share_cancel" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparency"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="500px"
+        android:layout_height="90px"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/dialog_top_background"
+        android:gravity="center"
+        android:text="@string/change_head"
+        android:textColor="@android:color/white"
+        android:textSize="33px" />
+
+    <Button
+        android:id="@+id/camera_btn"
+        android:layout_width="500px"
+        android:layout_height="90px"
+        android:background="@color/white"
+        android:text="@string/camera_shoot"
+        android:textSize="33px" />
+
+    <View
+        android:layout_width="500px"
+        android:layout_height="1dp"
+        android:background="@color/color_e5" />
+
+    <Button
+        android:id="@+id/picture_btn"
+        android:layout_width="500px"
+        android:layout_height="90px"
+        android:background="@drawable/dialog_bottom"
+        android:text="@string/phone_photo"
+        android:textSize="33px" />
+
+</LinearLayout>

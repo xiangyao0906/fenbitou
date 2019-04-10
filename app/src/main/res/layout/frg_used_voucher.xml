@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+            android:id="@+id/swipeToLoadLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include
+                android:id="@id/swipe_refresh_header"
+                layout="@layout/layout_google_hook_header" />
+            <ScrollView
+                android:id="@id/swipe_target"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <com.yizhilu.widget.NoScrollListView
+                        android:id="@+id/record_list_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="none" />
+
+                </LinearLayout>
+            </ScrollView>
+            <include
+                android:id="@id/swipe_load_more_footer"
+                layout="@layout/layout_classic_footer" />
+        </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+        <LinearLayout
+            android:id="@+id/null_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y106"
+                android:background="@drawable/bg_youhuiquan" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y12"
+                android:gravity="center"
+                android:text="@string/no_used_voucher"
+                android:textColor="@color/color_67"
+                android:textSize="@dimen/x14" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

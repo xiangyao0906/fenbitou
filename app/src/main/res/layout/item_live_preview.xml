@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="21px"
+        android:background="@color/color_f4" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/live_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/mask_live"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32px"
+                android:drawableLeft="@drawable/live_preview"
+                android:drawablePadding="16px"
+                android:text="未开始"
+                android:textColor="@color/white"
+                android:textSize="27px" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21px"
+                android:textColor="@color/white"
+                android:textSize="27px" />
+
+            <TextView
+                android:id="@+id/live_chapter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="21px"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="@color/white"
+                android:textSize="27px" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="132px"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="21px"
+            android:layout_marginTop="26px"
+            android:singleLine="true"
+            android:textColor="@color/color_33"
+            android:textSize="27px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="21px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_82"
+                android:textSize="34px" />
+
+            <TextView
+                android:id="@+id/people_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="21px"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="@color/color_B2"
+                android:textSize="25px" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

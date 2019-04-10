@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="90px"
+	    android:paddingLeft="36px"
+	    android:paddingRight="20px">
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:gravity="center_vertical">
+	        <ImageView
+	            android:id="@+id/chile_image"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/section"/>
+	        <ImageView
+	            android:id="@+id/child_type"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="15px"
+	            />
+	        <TextView
+	            android:id="@+id/child_name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="15px"
+	            android:textSize="27px"
+	            android:textColor="@color/color_67"
+	            android:text="aaa"/>
+	    </LinearLayout>
+	    <TextView
+	        android:id="@+id/course_free"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:text="@string/isFree"
+	        android:textColor="@color/color_f44336"
+	        android:visibility="gone"/>
+	</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="google_red">#EA4335</color>
+    <color name="google_green">#34A853</color>
+    <color name="Blue">#3e83e5</color>
+    <color name="transparency">#00000000</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="color_F6">#F6F6F6</color>
+    <color name="color_cc">#cccccc</color>
+    <color name="color_main">#3e83e5</color>
+    <color name="text_black">#333333</color>
+    <color name="text_gray555">#555555</color>
+    <color name="text_gray999">#999999</color>
+    <color name="text_gray333">#333333</color>
+    <color name="color_f1">#f1f1f1</color>
+    <color name="color_7f">#7f7f7f</color>
+    <color name="color_e6">#e6e6e6</color>
+    <color name="color_e5">#e5e5e5</color>
+    <color name="color_19">#191919</color>
+    <color name="color_bb">#bbbbbb</color>
+    <color name="color_f6">#f6f6f6</color>
+    <color name="color_67">#676767</color>
+    <color name="color_33">#333333</color>
+    <color name="color_b2">#b2b2b2</color>
+    <color name="color_34">#343434</color>
+    <color name="color_5dc880">#5dc880</color>
+    <color name="color_99">#999999</color>
+    <color name="color_b3">#b3b3b3</color>
+    <color name="color_9a">#9a9a9a</color>
+    <color name="color_f44336">#f44336</color>
+    <color name="color_32">#323232</color>
+    <color name="color_4d">#4d4d4d</color>
+    <color name="color_B3B3B3">#B3B3B3</color>
+    <color name="color_ef">#efefef</color>
+    <color name="color_dc">#dcdcdc</color>
+    <color name="color_FF9704">#FF9704</color>
+    <color name="color_f8">#f8f8f8</color>
+    <color name="tabText">#808080</color>
+    <color name="exit_text">#ff5757</color>
+    <color name="text_19">#191919</color>
+    <color name="transparenc">#00000000</color>
+    <color name="text_color_normal">#666666</color>
+    <color name="color_4e">#4E4E4E</color>
+    <color name="color_80">#808080</color>
+    <color name="color_db">#dbdbdb</color>
+    <color name="color_82">#5CC982</color>
+    <color name="color_4b">#FF4C4B</color>
+    <color name="color_f4">#ebf0f4</color>
+    <color name="color_28">#5CC982</color>
+    <color name="color_B2">#B2B2B2</color>
+    <color name="color_E5EEE7">#E5EEE7</color>
+    <color name="text_redF16">#F16B6F</color>
+    <color name="bg_lineEBF">#EBF0F4</color>
+    <color name="text_gray666">#666666</color>
+    <color name="text_orangeFF8">#FF8200</color>
+    <color name="Red">#F44336</color>
+    <color name="color_83">#838383</color>
+    <color name="bg_lineF1F">#F1F1F1</color>
+    <color name="text_grayB1B">#B1B1B1</color>
+    <color name="text_gray343">#343434</color>
+    <color name="text_gray777">#777777</color>
+    <color name="bg_line">#e6e6e6</color>
+    <color name="color_97">#979799</color>
+    <color name="text_blue3F8">#3F83E6</color>
+    <color name="text_gray595">#595A5C</color>
+    <color name="color_4B">#FF4C4B</color>
+    <color name="color_0B">#E7530B</color>
+    <color name="color_66">#666666</color>
+    <color name="color_E7530B">#E7530B</color>
+    <color name="color_ebf0f4">#ebf0f4</color>
+    <color name="color_f5">#f5f5f5</color>
+    <color name="color_3F83E6">#3F83E6</color>
+    <color name="color_77">#777777</color>
+    <color name="color_65">#656565</color>
+    <color name="order_pay_success">#11af2d</color>
+    <color name="color_red">#ff2f2f</color>
+    <color name="color_14">#dd3214</color>
+    <color name="color_F24F50">#F24F50</color>
+    <color name="color_56B7B9">#56B7B9</color>
+    <color name="color_FD6464">#FD6464</color>
+
+    <!---->
+    <color name="bgColor">#FFF2F2F2</color>
+
+    <color name="color_f9">#f9f9f9</color>
+
+    <color name="top_right_text_color_black">#575e65</color>
+    <color name="top_sline_color_gray">#e9ebf5</color>
+    <color name="top_tv_color_gray">#848e99</color>
+    <color name="bottom_et_color_gray">#9e9e9e</color>
+    <color name="left_et_color_gray">#546e7a</color>
+    <color name="top_et_color_gray">#90a4ae</color>
+    <color name="top_edittext_color_gray">#fafafa</color>
+    <color name="top_layout_color_white">#ffffff</color>
+    <color name="top_text_color_black">#000000</color>
+    <color name="center_view_color_blue">#2196f3</color>
+    <color name="commom_click_color_gray">#e0e0e0</color>
+    <color name="center_right_botton_color_purple">#dda0dd</color>
+    <color name="top_left_layout_color_black_alpha">#b200101b</color>
+    <color name="top_left_layout_color_black">#00101b</color>
+    <color name="color_11">#111111</color>
+    <color name="color_fc992c">#fc992c</color>
+    <color name="backgroundGray">#F5F5F5</color>
+    <color name="text_4c">#4c4c4c</color>
+    <color name="color_dd3214">#dd3214</color>
+    <color name="color_11af2d">#11af2d</color>
+
+
+    <!--考试-->
+
+    <color name="color_e9f4ff">#e9f4ff</color>
+    <color name="color_FE9403">#FE9403</color>
+    <color name="color_58585c">#58585c</color>
+    <color name="color_2d3036">#2d3036</color>
+    <color name="color_525459">#525459</color>
+    <color name="color_cacccf">#cacccf</color>
+    <color name="color_12">#121212</color>
+    <color name="color_A4">#A4A4A4</color>
+    <color name="color_f2f6f9">#f2f6f9</color>
+    <color name="color_ea">#eaeaea</color>
+    <color name="color_88">#888888</color>
+    <color name="color_4D">#4D4D4D</color>
+    <color name="color_FE8D00">#FE8D00</color>
+    <color name="color_DDEDFD">#DDEDFD</color>
+    <color name="color_F96E60">#F96E60</color>
+    <color name="color_A0">#A0A0A0</color>
+    <color name="color_F1">#F1F1F1</color>
+    <color name="color_9B58B7">#9B58B7</color>
+    <color name="color_F1686F">#F1686F</color>
+    <color name="color_C2">#C2C2C2</color>
+    <color name="color_EBA011">#EBA011</color>
+    <color name="color_3E83E5">#3E83E5</color>
+    <color name="color_c9">#c9c9c9</color>
+    <color name="color_transparency">#00000000</color>
+    <color name="color_c0">#c0c0c0</color>
+    <color name="color_AA">#AAAAAA</color>
+    <color name="color_e6161920">#e6161920</color>
+
+
+    <color name="color_74">#E37474</color>
+    <color name="color_8c">#0ECF8C</color>
+</resources>

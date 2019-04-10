@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_public_head" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/pay_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="261px"
+            android:layout_marginTop="128px"
+            android:background="@drawable/success_img" />
+
+        <LinearLayout
+            android:id="@+id/pay_orderForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pay_success"
+            android:layout_marginLeft="90px"
+            android:layout_marginTop="100px"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_number"
+                    android:textColor="@color/tabText"
+                    android:textSize="32px" />
+
+                <TextView
+                    android:id="@+id/order_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 订单号:"
+                    android:textColor="@color/color_33"
+                    android:layout_marginLeft="12px"
+                    android:textSize="32px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_success"
+                    android:textColor="@color/color_33"
+                    android:textSize="32px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="52px"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_total"
+                    android:textColor="@color/tabText"
+                    android:textSize="32px" />
+
+                <TextView
+                    android:id="@+id/course_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_14"
+                    android:textSize="41px" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="52px"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/accout_money"
+                    android:textColor="@color/tabText"
+                    android:textSize="32px" />
+
+                <TextView
+                    android:id="@+id/accout_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_14"
+                    android:textSize="41px" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="52px"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/need_pay"
+                    android:textColor="@color/tabText"
+                    android:textSize="32px" />
+
+                <TextView
+                    android:id="@+id/need_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_14"
+                    android:textSize="41px" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/promptly_pay"
+            android:layout_width="match_parent"
+            android:layout_height="68px"
+            android:layout_below="@id/pay_orderForm"
+            android:layout_marginLeft="81px"
+            android:layout_marginRight="81px"
+            android:layout_marginTop="70px"
+            android:background="@drawable/payment_button"
+            android:gravity="center"
+            android:text="@string/promptly_pay"
+            android:textColor="@color/white"
+            android:textSize="32px" />
+    </RelativeLayout>
+</LinearLayout>

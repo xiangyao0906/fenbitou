@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/color_f6"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_public_head" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="672px"
+        android:layout_marginTop="20px"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45px"
+            android:layout_marginTop="35px"
+            android:text="|"
+            android:textColor="@color/color_34"
+            android:textSize="30px" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:layout_marginRight="60px"
+            android:layout_marginTop="35px"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feedback_information"
+                android:textColor="@color/color_34"
+                android:textSize="30px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23px"
+                android:text="@string/feedback_point_out"
+                android:textColor="@color/color_7f"
+                android:textSize="27px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="96px"
+                android:text="@string/feedback_content"
+                android:textColor="@color/color_7f"
+                android:textSize="27px" />
+
+            <EditText
+                android:id="@+id/feedback_content"
+                android:layout_width="match_parent"
+                android:layout_height="128px"
+                android:layout_marginTop="20px"
+                android:background="@drawable/feedback_bg"
+                android:textColor="@color/color_33"
+                android:gravity="left|top"
+                android:paddingLeft="11px"
+                android:paddingRight="11px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="52px"
+                android:text="@string/feedback_contact"
+                android:textColor="@color/color_7f"
+                android:textSize="27px" />
+
+            <EditText
+                android:id="@+id/feedback_number"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="20px"
+                android:background="@drawable/feedback_bg"
+                android:hint="@string/feedback_hint"
+                android:textSize="27px"
+                android:textColor="@color/color_33"
+                android:paddingLeft="10px" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/feedback_button"
+        android:layout_width="600px"
+        android:layout_height="90px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80px"
+        android:background="@drawable/feedback_btn"
+        android:text="@string/feedback"
+        android:textColor="@color/white"
+        android:textSize="34px" />
+</LinearLayout>

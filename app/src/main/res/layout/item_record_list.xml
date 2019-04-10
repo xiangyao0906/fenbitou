@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="30px"
+    android:paddingTop="20px"
+    android:paddingRight="30px"
+    android:paddingBottom="20px">
+
+    <ImageView
+        android:id="@+id/courseImage"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/courseName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/color_33"
+            android:textSize="29px" />
+
+        <TextView
+            android:id="@+id/kpointName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="fsfsd"
+            android:textColor="@color/color_33"
+            android:textSize="27px"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/history_time_img" />
+
+            <TextView
+                android:id="@+id/coursePlayTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5px"
+                android:layout_weight="1"
+                android:textColor="@color/color_b2"
+                android:textSize="27px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="10px"
+                android:background="@drawable/history_bg_img"
+                android:gravity="center"
+                android:padding="10px"
+                android:text="继续学习"
+                android:textColor="@color/color_5dc880"
+                android:textSize="26px" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

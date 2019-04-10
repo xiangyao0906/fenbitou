@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 课程介绍的布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:layout_marginLeft="15px"
+                android:layout_marginRight="15px"
+                android:layout_marginTop="35px" >
+
+                <TextView
+                    android:id="@+id/course_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_19"
+                    android:textSize="33px" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/course_name"
+                    android:layout_marginTop="20px"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="￥"
+                                android:textColor="@color/color_b2"
+                                android:textSize="27px" />
+
+                            <TextView
+                                android:id="@+id/course_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2px"
+                                android:text="1980"
+                                android:textColor="@color/color_main"
+                                android:textSize="33px" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15px"
+                                android:text="￥"
+                                android:textColor="@color/color_b2"
+                                android:textSize="27px" />
+
+                            <TextView
+                                android:id="@+id/course_price_two"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2px"
+                                android:text="1980"
+                                android:textColor="@color/color_b2"
+                                android:textSize="33px" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/buy_btn"
+                        android:layout_width="200px"
+                        android:layout_height="70px"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/purchase_button"
+                        android:text="@string/purchase"
+                        android:textColor="@color/white"
+                        android:textSize="29px" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/free_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/course_name"
+                    android:background="@drawable/freefree"
+                    android:gravity="center"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_e5" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"
+                android:layout_marginRight="15px"
+                android:layout_marginTop="30px" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/introduce"
+                    android:textColor="@color/color_19"
+                    android:textSize="29px" />
+
+                <ImageView
+                    android:id="@+id/pull_down_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/open" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/web_view_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15px"
+                android:layout_marginRight="15px" >
+                <WebView
+                    android:id="@+id/course_webView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:layout_marginTop="20px"
+                android:background="@color/color_e5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15px"
+                android:layout_marginLeft="15px"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:text="@string/lecturer"
+                    android:textColor="@color/color_19"
+                    android:textSize="27px" />
+
+                <com.yizhilu.widget.NoScrollListView
+                    android:id="@+id/teacher_list_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@null" >
+                </com.yizhilu.widget.NoScrollListView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: org.zackratos:ultimatebar:1.0.3@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/ultimatebar-1.0.3.aar/0c6ae685e02df6f79c9cf15385657b6e/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/ultimatebar-1.0.3.aar/0c6ae685e02df6f79c9cf15385657b6e/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.zackratos/ultimatebar/1.0.3/20328460f61d1295409d7b84b7248b02f1e1953d/ultimatebar-1.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y13"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/group_detail_topic_avatar"
+            android:layout_width="@dimen/x35"
+            android:layout_height="@dimen/x35"
+            android:layout_marginLeft="@dimen/x9"
+            android:src="@drawable/weijiazai_header" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x10"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/group_detail_topic_author_nickName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/between"
+                    android:drawablePadding="@dimen/x9"
+                    android:text="sdfs"
+                    android:textColor="@color/text_orangeFF8"
+                    android:textSize="@dimen/x13" />
+
+                <TextView
+                    android:id="@+id/group_detail_topic_author_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x9"
+                    android:text="sdf"
+                    android:textColor="@color/text_gray777"
+                    android:textSize="@dimen/x11" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/group_detail_topic_createTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y5"
+                android:text="dfsfs"
+                android:textColor="@color/text_grayB1B"
+                android:textSize="@dimen/x11" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x9"
+        android:layout_marginTop="@dimen/y10"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/isDetailTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/x5"
+            android:background="@drawable/text_blue_bg_solid_frame"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:text="置顶"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x9"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/isDetailEssence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/x5"
+            android:background="@drawable/text_purple_bg_solid_frame"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:text="精华"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x9"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/isDetailFiery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/x5"
+            android:background="@drawable/text_red_bg_solid_frame"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:text="火热"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x9"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/group_detail_topic_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:singleLine="true"
+            android:text="sdfsdfsd"
+            android:textColor="@color/black"
+            android:textSize="@dimen/x14" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/group_detail_topic_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x9"
+        android:layout_marginTop="@dimen/y7"
+        android:layout_marginRight="@dimen/x9"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="sfasdfsafdsf"
+        android:textColor="@color/text_gray777"
+        android:textSize="@dimen/x11" />
+
+    <com.jaeger.ninegridimageview.NineGridImageView
+        android:id="@+id/layout_nine_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        app:imgGap="4dp"
+        app:showStyle="fill"
+        app:singleImgSize="240dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y30"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/group_detail_topic_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/comment"
+                android:drawablePadding="@dimen/x5"
+                android:text="--"
+                android:textColor="@color/text_gray777"
+                android:textSize="@dimen/x14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/group_detail_topic_praise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/parise"
+                android:drawablePadding="@dimen/x5"
+                android:text="--"
+                android:textColor="@color/text_gray777"
+                android:textSize="@dimen/x14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/group_detail_topic_browse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/browse"
+                android:drawablePadding="@dimen/x5"
+                android:text="--"
+                android:textColor="@color/text_gray777"
+                android:textSize="@dimen/x14" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/bg_lineF1F" />
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<resources xmlns:android="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_main</item>
+        <item name="colorPrimaryDark">@color/color_main</item>
+        <item name="colorAccent">@color/color_main</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:listDivider">@drawable/divider_bg</item>
+    </style>
+    <style name="PlayerTheme" parent="AppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <!-- 自定义dialog -->
+    <style name="custom_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@color/transparency</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+    <!-- 音频 -->
+    <style name="audio_frequency" parent="android:Widget.SeekBar">
+        <item name="android:progressDrawable">@drawable/scrubber_progress_horizontal_holo_dark</item>
+        <item name="android:indeterminateDrawable">@drawable/scrubber_progress_horizontal_holo_dark</item>
+        <item name="android:minHeight">28dip</item>
+        <item name="android:maxHeight">28dip</item>
+        <item name="android:thumb">@drawable/scrubber_control_selector_holo</item>
+    </style>
+
+    <!-- Navigation Header -->
+    <style name="NavPage">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+
+    <style name="UpdateAppDialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:windowEnterAnimation">@anim/update_app_window_in</item>
+        <item name="android:windowExitAnimation">@anim/update_app_window_out</item>
+    </style>
+
+
+    <style name="UpdateAppNumberProgressBar_Red">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+
+        <item name="progress_max">100</item>
+        <item name="progress_current">0</item>
+
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#e94339</item>
+
+        <item name="progress_text_size">12sp</item>
+        <item name="progress_text_color">#e94339</item>
+
+        <item name="progress_reached_bar_height">4dp</item>
+        <item name="progress_unreached_bar_height">3dp</item>
+    </style>
+
+    <style name="PageView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/talk_common_margin</item>
+        <item name="android:src">@drawable/polyv_iv_emo_dot</item>
+    </style>
+
+    <style name="iv_click_controller_port_bottom">
+        <item name="android:layout_width">@dimen/bottom_layout_height</item>
+        <item name="android:layout_height">@dimen/bottom_layout_height</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/polyv_commom_click_color_gray</item>
+        <item name="android:scaleType">center</item>
+    </style>
+</resources>

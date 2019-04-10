@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_public_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="150px"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32px"
+            android:text="@string/about_software"
+            android:textColor="@color/color_32"
+            android:textSize="34px" />
+
+        <TextView
+            android:id="@+id/about_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="22px"
+            android:text="@string/about_version"
+            android:textColor="@color/text_color_normal"
+            android:textSize="27px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="125px"
+            android:text="@string/about_knowledge"
+            android:textColor="@color/color_32"
+            android:textSize="34px" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="41px"
+            android:gravity="center"
+            android:paddingLeft="100px"
+            android:paddingRight="100px"
+            android:text="@string/about_brief"
+            android:textColor="@color/text_color_normal"
+            android:textSize="22px" />
+
+        <TextView
+            android:id="@+id/go_welcome"
+            android:layout_width="400px"
+            android:layout_height="70px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="73px"
+            android:background="@drawable/about_up_btn"
+            android:gravity="center"
+            android:text="@string/about_welcome"
+            android:textColor="@color/white"
+            android:textSize="30px" />
+    </LinearLayout>
+</LinearLayout>

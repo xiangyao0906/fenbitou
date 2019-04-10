@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DevInfor>
+
+    <SinaWeibo
+        Id="1"
+        SortId="1"
+        AppKey="568898243"
+        AppSecret="38a4f8204cc784f81f9f0daaf31e02e3"
+        RedirectUrl="http://www.268xue.com/"
+        ShareByAppClient="false"
+        Enable="true" />
+
+    <QZone
+        Id="3"
+        SortId="3"
+        AppId="101070993"
+        AppKey="fe145071ee22b561b19a475ce4404d60"
+        ShareByAppClient="true"
+        Enable="true" />
+
+    <Wechat
+        Id="4"
+        SortId="4"
+        AppId="wxaf676dee667d4f80"
+        AppSecret="7e59a11bb58f8d2a4050bdfca1158586"
+        BypassApproval="false"
+        Enable="true" />
+
+    <WechatMoments
+        Id="5"
+        SortId="5"
+        AppId="wxaf676dee667d4f80"
+        AppSecret="7e59a11bb58f8d2a4050bdfca1158586"
+        BypassApproval="false"
+        Enable="true" />
+	<QQ
+        Id="7"
+        SortId="7"
+        AppId="101070993"
+        AppKey="fe145071ee22b561b19a475ce4404d60"
+        ShareByAppClient="true"
+        Enable="true" />
+
+</DevInfor>

@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.yizhilu.eduapp">
+    <!-- 一般权限参 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <application
+        android:name="com.yizhilu.base.DemoApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/apk_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+
+
+        <provider
+            android:name="com.yizhilu.service.UpdateFileProvider"
+            android:authorities="${applicationId}.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/new_app_file_paths" />
+        </provider>
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+        <meta-data
+            android:name="design_width"
+            android:value="720" />
+        <meta-data
+            android:name="design_height"
+            android:value="1280" /> <!-- shareSDK -->
+        <meta-data
+            android:name="Mob-AppKey"
+            android:value="20492c2ab9b84" />
+        <meta-data
+            android:name="Mob-AppSecret"
+            android:value="2a07ebd7dad2b707eb622cf5d9566242" />
+
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <!--
+            	AuthorizeAdapter表示一个继承自cn.sharesdk.framework.authorize.AuthorizeAdapter
+            	的类，这个类可以监听到页面的生命周期，也可以获取授权页面的各种UI控件。
+            	开发者可以通过继承AuthorizeAdapter，重写其方法，并获取各种UI来自定义这个页面的行为。
+            -->
+
+            <intent-filter>
+                <data android:scheme="db-7janx53ilz11gbs" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!--
+                如果集成QQ分享，或者使用QQ客户端来进行QQ空间的分享，须要在此处添加一个对ACTION_VIEW
+                事件的过滤器，其中的scheme是“tencent”前缀再开发者应用的加上appId。如果此过滤器不设置，
+                则分享结束以后不能得到正确的回调
+            -->
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- shareSDK end -->
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" /> <!-- 更新app的服务 -->
+        <service android:name="com.yizhilu.service.DownLoadVersionService" />
+        <service android:name="com.yizhilu.service.DownloadService" /> <!-- 96k视频详情 -->
+        <activity
+            android:name=".AvailableCouponActivity"
+            android:screenOrientation="portrait" /> <!-- 个人信息 -->
+        <activity
+            android:name=".PersonalInformationActivity"
+            android:screenOrientation="portrait" /> <!-- 修改个人信息 -->
+        <activity
+            android:name=".AmendUserMessageActivity"
+            android:screenOrientation="portrait" /> <!-- 修改密码 -->
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:screenOrientation="portrait" /> <!-- 绑定手机号邮箱 -->
+        <activity
+            android:name=".BindingPhoneEmailActivity"
+            android:screenOrientation="portrait" /> <!-- 未绑定点击绑定手机或邮箱进入的页面 -->
+        <activity
+            android:name=".PhoneOrEmailActivity"
+            android:screenOrientation="portrait" /> <!-- 登陆 -->
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" /> <!-- 注册 - 手机 -->
+        <activity
+            android:name=".RegistrActivity"
+            android:screenOrientation="portrait" /> <!-- 注册 - 手机-邮箱 -->
+        <activity
+            android:name=".RegistrPhoneEmailActivity"
+            android:screenOrientation="portrait" /> <!-- 注册 - 邮箱 -->
+        <activity
+            android:name=".RegistrEmailActivity"
+            android:screenOrientation="portrait" /> <!-- 引导页 -->
+        <activity
+            android:name=".GuideActivity"
+            android:screenOrientation="portrait" /> <!-- 关于我们 -->
+        <activity
+            android:name=".AboutActivity"
+            android:screenOrientation="portrait" /> <!-- 系统设置 -->
+        <activity
+            android:name=".SystemSettingActivity"
+            android:screenOrientation="portrait" /> <!-- 版本更新 -->
+        <activity
+            android:name=".UpdateEditionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" /> <!-- app协议 -->
+        <activity
+            android:name=".AgreementActivity"
+            android:screenOrientation="portrait" /> <!-- 忘记密码 -->
+        <activity
+            android:name=".ForgetPwdActivity"
+            android:screenOrientation="portrait" /> <!-- 意见反馈 -->
+        <activity
+            android:name=".OpinionFeedbackActivity"
+            android:screenOrientation="portrait" /> <!-- 学习统计 -->
+        <activity
+            android:name=".StudyStatisticsActivity"
+            android:screenOrientation="portrait" /> <!-- 资讯的webView -->
+        <!-- 我的课程 -->
+        <activity
+            android:name=".MyCourseActivity"
+            android:screenOrientation="portrait" /> <!-- 讲师列表的类 -->
+        <activity
+            android:name=".TeacherHomeActivity"
+            android:screenOrientation="portrait" /> <!-- 讲师详情的类 -->
+        <activity
+            android:name=".TeacherDeatailsActivity"
+            android:screenOrientation="portrait" /> <!-- 系统消息的类 -->
+        <activity
+            android:name=".SystemAcmActivity"
+            android:screenOrientation="portrait" /> <!-- 我的收藏的类 -->
+        <activity
+            android:name=".MyCollectionActivity"
+            android:screenOrientation="portrait" /> <!-- 行业资讯的类 -->
+        <activity
+            android:name=".IndustryinformationActivity"
+            android:screenOrientation="portrait" /> <!-- 资讯详情的类 -->
+        <activity
+            android:name=".IndustryInformationDetailsActivity"
+            android:screenOrientation="portrait" /> <!-- 直播详情的类 -->
+        <activity
+            android:name=".MyWalletActivity"
+            android:screenOrientation="portrait" /> <!-- 我的账户 -->
+        <activity
+            android:name=".PersonalAcountActivity"
+            android:screenOrientation="portrait" /> <!-- 起始页AcreateLiveActivity  ATime -->
+        <activity
+            android:name=".StartActvity"
+            android:label="@string/apk_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- 我的订单 -->
+        <activity
+            android:name=".MyOrderActivity"
+            android:screenOrientation="portrait" /> <!-- 确认订单 -->
+        <activity
+            android:name=".PaymentConfirmOrderActivity"
+            android:screenOrientation="portrait" /> <!-- 第三方绑定 -->
+        <activity
+            android:name=".RemoveBindingActivity"
+            android:screenOrientation="portrait" /> <!-- 支付的类 -->
+        <activity
+            android:name=".PayActivity"
+            android:screenOrientation="portrait" /> <!-- 考试 -->
+        <activity
+            android:name="com.yizhilu.Exam.ExamActivity"
+            android:screenOrientation="portrait" /> <!-- 社区主页 -->
+        <activity
+            android:name="com.yizhilu.community.ConmunityMainActivity"
+            android:screenOrientation="portrait" /> <!-- 社区搜索页 -->
+        <activity
+            android:name="com.yizhilu.community.CommunitySearch"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 小组详情页 -->
+        <activity
+            android:name="com.yizhilu.community.GroupDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" /> <!-- ********************************微信支付************************************* -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name" />
+
+        <receiver android:name="com.yizhilu.wechatpayment.AppRegister">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver> <!-- ********************************微信************************************* -->
+        <!-- 课程详情购买 确认订单的类 -->
+        <activity
+            android:name=".ConfirmOrderActivity"
+            android:screenOrientation="portrait" /> <!-- 支付成功的类 -->
+        <activity
+            android:name=".PaySuccessActivity"
+            android:screenOrientation="portrait" /> <!-- 图片浏览的类 -->
+        <activity
+            android:name="com.yizhilu.community.BigImageActivity"
+            android:screenOrientation="portrait" /> <!-- 话题详情的类 -->
+        <activity
+            android:name="com.yizhilu.community.TopicDetailsActivity"
+            android:screenOrientation="portrait" /> <!-- 社区成员的类 -->
+        <activity
+            android:name="com.yizhilu.community.GroupMenberActivity"
+            android:screenOrientation="portrait" /> <!-- 发表话题的类 -->
+        <activity
+            android:name="com.yizhilu.community.AddTopicActivity"
+            android:screenOrientation="portrait" /> <!-- 我的直播得类 -->
+        <activity
+            android:name="com.yizhilu.Exam.StageCommentActivity"
+            android:screenOrientation="portrait" /> <!-- 选择下载的类 -->
+        <activity
+            android:name=".DiscontActivity"
+            android:screenOrientation="portrait" /> <!-- 考试的类 -->
+        <activity
+            android:name="com.yizhilu.Exam.BeginExamPaperActivity"
+            android:screenOrientation="portrait" /> <!-- 查看解析的类 -->
+        <activity
+            android:name="com.yizhilu.Exam.LookParserActivity"
+            android:screenOrientation="portrait" /> <!-- 练习报告 -->
+        <activity
+            android:name="com.yizhilu.Exam.PracticeReportActivityTwo"
+            android:screenOrientation="portrait" /> <!-- 纠错的类 -->
+        <activity
+            android:name="com.yizhilu.Exam.CorrectErrorActivity"
+            android:screenOrientation="portrait" /> <!-- 知识点练习页 -->
+        <activity
+            android:name="com.yizhilu.Exam.KnowledgePointActivity"
+            android:screenOrientation="portrait" /> <!-- 我的列表 -->
+        <activity
+            android:name="com.yizhilu.community.MyGroupActivity"
+            android:screenOrientation="portrait" /> <!-- 开始考试 -->
+        <activity
+            android:name="com.yizhilu.Exam.BeginExamActivity"
+            android:screenOrientation="portrait" /> <!-- 智能错题练习的类 -->
+        <activity
+            android:name="com.yizhilu.Exam.ErrorPracticeListActivity"
+            android:screenOrientation="portrait" /> <!-- 弹出论述题练习的类 -->
+        <activity
+            android:name="com.yizhilu.Exam.DiscussActivity"
+            android:screenOrientation="portrait" /> <!-- 组卷模考的选择的类 -->
+        <activity
+            android:name="com.yizhilu.Exam.AssemblyExamActivity"
+            android:screenOrientation="portrait" /> <!-- 能力评估的类 -->
+        <activity
+            android:name="com.yizhilu.Exam.AbilityAssessActivity"
+            android:screenOrientation="portrait" /> <!-- 学习记录页 -->
+        <activity
+            android:name="com.yizhilu.Exam.StudyRecordActivity"
+            android:screenOrientation="portrait" /> <!-- 添加的评论的类 -->
+        <activity
+            android:name="com.yizhilu.community.AddCommentActivity"
+            android:screenOrientation="portrait" /> <!-- 错题记录 -->
+        <activity
+            android:name="com.yizhilu.Exam.WrongRecordActivity"
+            android:screenOrientation="portrait" /> <!-- 单个试题解析的类 -->
+        <activity
+            android:name="com.yizhilu.Exam.SingleLookParserActivity"
+            android:screenOrientation="portrait" /> <!-- 记录笔记的类 -->
+        <activity
+            android:name="com.yizhilu.Exam.RecordNoteActivity"
+            android:screenOrientation="portrait" /> <!-- 收藏试题的类 -->
+        <activity
+            android:name="com.yizhilu.Exam.CollectRecordActivity"
+            android:screenOrientation="portrait" /> <!-- 图片处理的类 -->
+        <activity
+            android:name="com.yizhilu.Exam.PhotoActivity"
+            android:screenOrientation="portrait" /> <!-- 播放视频 -->
+        <activity
+            android:name="com.yizhilu.Exam.ExamMediaPlayActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation"
+            android:screenOrientation="landscape" /> <!-- 图片处理的类 -->
+        <activity
+            android:name=".SearchActivity"
+            android:screenOrientation="portrait" /> <!-- 直播支付的类 -->
+        <activity
+            android:name=".ConfirmOrderLiveActivity"
+            android:screenOrientation="portrait" /> <!-- 新资讯的类 -->
+        <activity
+            android:name=".InformationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    </application>
+
+</manifest>

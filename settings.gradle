@@ -1,0 +1,1 @@
+include ':app', ':magicindicator', ':sliderLibrary', ':okhttputils', ':swipeToLoadLayout', ':polyvAndroidSDKGif1.0', ':nicedialog'
