@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.yizhilu.eduapp">
+    package="com.fenbitou.wantongzaixian">
     <!-- 一般权限参 -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -18,7 +18,7 @@
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
 
     <application
-        android:name="com.yizhilu.base.DemoApplication"
+        android:name="com.fenbitou.base.DemoApplication"
         android:allowBackup="true"
         android:icon="@drawable/logo"
         android:label="@string/apk_name"
@@ -26,10 +26,33 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:label">
+        <activity
+            android:name=".BLCourseDetailsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="PlayerActivity" />
 
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.fenbitou.bl.activity.PolyvPlayerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="PlayerActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
         <provider
-            android:name="com.yizhilu.service.UpdateFileProvider"
+            android:name="com.fenbitou.service.UpdateFileProvider"
             android:authorities="${applicationId}.fileProvider"
             android:exported="false"
             android:grantUriPermissions="true">
@@ -100,8 +123,8 @@
             android:name=".MainActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait" /> <!-- 更新app的服务 -->
-        <service android:name="com.yizhilu.service.DownLoadVersionService" />
-        <service android:name="com.yizhilu.service.DownloadService" /> <!-- 96k视频详情 -->
+        <service android:name="com.fenbitou.service.DownLoadVersionService" />
+        <service android:name="com.fenbitou.service.DownloadService" /> <!-- 96k视频详情 -->
         <activity
             android:name=".AvailableCouponActivity"
             android:screenOrientation="portrait" /> <!-- 个人信息 -->
@@ -208,17 +231,17 @@
             android:name=".PayActivity"
             android:screenOrientation="portrait" /> <!-- 考试 -->
         <activity
-            android:name="com.yizhilu.Exam.ExamActivity"
+            android:name="com.fenbitou.Exam.ExamActivity"
             android:screenOrientation="portrait" /> <!-- 社区主页 -->
         <activity
-            android:name="com.yizhilu.community.ConmunityMainActivity"
+            android:name="com.fenbitou.community.ConmunityMainActivity"
             android:screenOrientation="portrait" /> <!-- 社区搜索页 -->
         <activity
-            android:name="com.yizhilu.community.CommunitySearch"
+            android:name="com.fenbitou.community.CommunitySearch"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" /> <!-- 小组详情页 -->
         <activity
-            android:name="com.yizhilu.community.GroupDetailActivity"
+            android:name="com.fenbitou.community.GroupDetailActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.alipay.sdk.app.H5PayActivity"
@@ -231,7 +254,7 @@
             android:exported="true"
             android:label="@string/app_name" />
 
-        <receiver android:name="com.yizhilu.wechatpayment.AppRegister">
+        <receiver android:name="com.fenbitou.wechatpayment.AppRegister">
             <intent-filter>
                 <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
             </intent-filter>
@@ -244,79 +267,79 @@
             android:name=".PaySuccessActivity"
             android:screenOrientation="portrait" /> <!-- 图片浏览的类 -->
         <activity
-            android:name="com.yizhilu.community.BigImageActivity"
+            android:name="com.fenbitou.community.BigImageActivity"
             android:screenOrientation="portrait" /> <!-- 话题详情的类 -->
         <activity
-            android:name="com.yizhilu.community.TopicDetailsActivity"
+            android:name="com.fenbitou.community.TopicDetailsActivity"
             android:screenOrientation="portrait" /> <!-- 社区成员的类 -->
         <activity
-            android:name="com.yizhilu.community.GroupMenberActivity"
+            android:name="com.fenbitou.community.GroupMenberActivity"
             android:screenOrientation="portrait" /> <!-- 发表话题的类 -->
         <activity
-            android:name="com.yizhilu.community.AddTopicActivity"
+            android:name="com.fenbitou.community.AddTopicActivity"
             android:screenOrientation="portrait" /> <!-- 我的直播得类 -->
         <activity
-            android:name="com.yizhilu.Exam.StageCommentActivity"
+            android:name="com.fenbitou.Exam.StageCommentActivity"
             android:screenOrientation="portrait" /> <!-- 选择下载的类 -->
         <activity
             android:name=".DiscontActivity"
             android:screenOrientation="portrait" /> <!-- 考试的类 -->
         <activity
-            android:name="com.yizhilu.Exam.BeginExamPaperActivity"
+            android:name="com.fenbitou.Exam.BeginExamPaperActivity"
             android:screenOrientation="portrait" /> <!-- 查看解析的类 -->
         <activity
-            android:name="com.yizhilu.Exam.LookParserActivity"
+            android:name="com.fenbitou.Exam.LookParserActivity"
             android:screenOrientation="portrait" /> <!-- 练习报告 -->
         <activity
-            android:name="com.yizhilu.Exam.PracticeReportActivityTwo"
+            android:name="com.fenbitou.Exam.PracticeReportActivityTwo"
             android:screenOrientation="portrait" /> <!-- 纠错的类 -->
         <activity
-            android:name="com.yizhilu.Exam.CorrectErrorActivity"
+            android:name="com.fenbitou.Exam.CorrectErrorActivity"
             android:screenOrientation="portrait" /> <!-- 知识点练习页 -->
         <activity
-            android:name="com.yizhilu.Exam.KnowledgePointActivity"
+            android:name="com.fenbitou.Exam.KnowledgePointActivity"
             android:screenOrientation="portrait" /> <!-- 我的列表 -->
         <activity
-            android:name="com.yizhilu.community.MyGroupActivity"
+            android:name="com.fenbitou.community.MyGroupActivity"
             android:screenOrientation="portrait" /> <!-- 开始考试 -->
         <activity
-            android:name="com.yizhilu.Exam.BeginExamActivity"
+            android:name="com.fenbitou.Exam.BeginExamActivity"
             android:screenOrientation="portrait" /> <!-- 智能错题练习的类 -->
         <activity
-            android:name="com.yizhilu.Exam.ErrorPracticeListActivity"
+            android:name="com.fenbitou.Exam.ErrorPracticeListActivity"
             android:screenOrientation="portrait" /> <!-- 弹出论述题练习的类 -->
         <activity
-            android:name="com.yizhilu.Exam.DiscussActivity"
+            android:name="com.fenbitou.Exam.DiscussActivity"
             android:screenOrientation="portrait" /> <!-- 组卷模考的选择的类 -->
         <activity
-            android:name="com.yizhilu.Exam.AssemblyExamActivity"
+            android:name="com.fenbitou.Exam.AssemblyExamActivity"
             android:screenOrientation="portrait" /> <!-- 能力评估的类 -->
         <activity
-            android:name="com.yizhilu.Exam.AbilityAssessActivity"
+            android:name="com.fenbitou.Exam.AbilityAssessActivity"
             android:screenOrientation="portrait" /> <!-- 学习记录页 -->
         <activity
-            android:name="com.yizhilu.Exam.StudyRecordActivity"
+            android:name="com.fenbitou.Exam.StudyRecordActivity"
             android:screenOrientation="portrait" /> <!-- 添加的评论的类 -->
         <activity
-            android:name="com.yizhilu.community.AddCommentActivity"
+            android:name="com.fenbitou.community.AddCommentActivity"
             android:screenOrientation="portrait" /> <!-- 错题记录 -->
         <activity
-            android:name="com.yizhilu.Exam.WrongRecordActivity"
+            android:name="com.fenbitou.Exam.WrongRecordActivity"
             android:screenOrientation="portrait" /> <!-- 单个试题解析的类 -->
         <activity
-            android:name="com.yizhilu.Exam.SingleLookParserActivity"
+            android:name="com.fenbitou.Exam.SingleLookParserActivity"
             android:screenOrientation="portrait" /> <!-- 记录笔记的类 -->
         <activity
-            android:name="com.yizhilu.Exam.RecordNoteActivity"
+            android:name="com.fenbitou.Exam.RecordNoteActivity"
             android:screenOrientation="portrait" /> <!-- 收藏试题的类 -->
         <activity
-            android:name="com.yizhilu.Exam.CollectRecordActivity"
+            android:name="com.fenbitou.Exam.CollectRecordActivity"
             android:screenOrientation="portrait" /> <!-- 图片处理的类 -->
         <activity
-            android:name="com.yizhilu.Exam.PhotoActivity"
+            android:name="com.fenbitou.Exam.PhotoActivity"
             android:screenOrientation="portrait" /> <!-- 播放视频 -->
         <activity
-            android:name="com.yizhilu.Exam.ExamMediaPlayActivity"
+            android:name="com.fenbitou.Exam.ExamMediaPlayActivity"
             android:configChanges="screenSize|keyboardHidden|orientation"
             android:screenOrientation="landscape" /> <!-- 图片处理的类 -->
         <activity
@@ -334,6 +357,56 @@
             android:exported="true"
             android:launchMode="singleTop"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.fenbitou.bl.activity.PolyvMainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.fenbitou.bl.activity.PolyvOnlineVideoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="OnlineVideoActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fenbitou.bl.activity.PolyvDownloadActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="DownloadActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fenbitou.bl.activity.PolyvTalkEdittextActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/at_talk_et"
+            android:windowSoftInputMode="stateVisible|adjustResize">
+            <intent-filter>
+                <action android:name="TalkEdittextActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fenbitou.bl.activity.PolyvTalkSendActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateVisible|adjustResize">
+            <intent-filter>
+                <action android:name="TalkSendActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

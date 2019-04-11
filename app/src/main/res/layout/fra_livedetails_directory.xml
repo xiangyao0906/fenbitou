@@ -74,12 +74,12 @@
                 android:layout_height="27px"
                 android:background="@color/color_f4" />
 
-            <com.yizhilu.widget.NoScrollListView
+            <com.fenbitou.widget.NoScrollListView
                 android:id="@+id/list_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:divider="@null" >
-            </com.yizhilu.widget.NoScrollListView>
+            </com.fenbitou.widget.NoScrollListView>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+        <FrameLayout
+            android:id="@+id/fl_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/view_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_center_player_height"
+            android:background="@color/top_text_color_black">
+
+            <com.easefun.polyvsdk.video.PolyvVideoView
+                android:id="@+id/polyv_video_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!-- 音频模式的封面图(音视频切换) -->
+            <com.fenbitou.bl.player.PolyvPlayerAudioCoverView
+                android:id="@+id/polyv_cover_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!-- mp3源文件播放时的封面图 -->
+            <com.fenbitou.bl.player.PolyvPlayerAudioCoverView
+                android:id="@+id/polyv_source_audio_cover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:show_film="false" />
+
+            <!-- logo -->
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/polyv_logo"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:id="@+id/fl_danmu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!-- 底部字幕 -->
+            <TextView
+                android:id="@+id/srt"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="bottom|center_horizontal"
+                android:textColor="@android:color/white"
+                android:visibility="gone" />
+
+            <!-- 顶部字幕 -->
+            <TextView
+                android:id="@+id/top_srt"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:gravity="top|center_horizontal"
+                android:paddingTop="10dp"
+                android:textColor="@android:color/white"
+                android:visibility="gone" />
+
+            <com.fenbitou.bl.player.PolyvPlayerLightView
+                android:id="@+id/polyv_player_light_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+            <com.fenbitou.bl.player.PolyvPlayerVolumeView
+                android:id="@+id/polyv_player_volume_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+            <com.fenbitou.bl.player.PolyvPlayerProgressView
+                android:id="@+id/polyv_player_progress_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+            <!-- 跑马灯 -->
+            <com.easefun.polyvsdk.marquee.PolyvMarqueeView
+                android:id="@+id/polyv_marquee_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.fenbitou.bl.player.PolyvPlayerMediaController
+                android:id="@+id/polyv_player_media_controller"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+            <!-- 视频在加载过程中显示的进度条 -->
+            <ProgressBar
+                android:id="@+id/loading_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+            <com.fenbitou.bl.player.PolyvPlayerAnswerView
+                android:id="@+id/polyv_player_question_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+            <com.fenbitou.bl.player.PolyvPlayerAuditionView
+                android:id="@+id/polyv_player_audition_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+            <com.easefun.polyvsdk.video.auxiliary.PolyvAuxiliaryVideoView
+                android:id="@+id/polyv_auxiliary_video_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/black" />
+
+            <!-- 广告片头在加载过程中显示的进度条 -->
+            <ProgressBar
+                android:id="@+id/auxiliary_loading_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+            <com.fenbitou.bl.player.PolyvPlayerAuxiliaryView
+                android:id="@+id/polyv_player_auxiliary_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/count_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="广告也精彩：%d秒"
+                android:textColor="@android:color/white"
+                android:visibility="gone" />
+
+            <com.fenbitou.bl.player.PolyvPlayerPreviewView
+                android:id="@+id/polyv_player_first_start_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+            <!-- vlms cover -->
+            <ImageView
+                android:id="@+id/iv_vlms_cover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+
+            <com.fenbitou.bl.view.PolyvScreencastStatusLayout
+                android:id="@+id/fl_screencast_status"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+            <com.fenbitou.bl.view.PolyvScreencastSearchLayout
+                android:id="@+id/fl_screencast_search_land"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:alpha="0.8"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/flow_play_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#55000000"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="您正在使用非WiFi网络，继续播放将产生流量。"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/flow_play_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/polyv_tv_bg_corners"
+                        android:drawableLeft="@drawable/polyv_btn_play_port"
+                        android:drawablePadding="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+                        android:text="流量播放"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/cancel_flow_play_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/polyv_tv_bg_corners"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+                        android:text="取消"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 播放错误提示界面 -->
+            <com.fenbitou.bl.player.PolyvPlayerPlayErrorView
+                android:id="@+id/polyv_player_play_error_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"/>
+
+            <!-- 线路切换界面 -->
+            <com.fenbitou.bl.player.PolyvPlayerPlayRouteView
+                android:id="@+id/polyv_player_play_route_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <com.fenbitou.bl.view.PolyvScreencastSearchLayout
+            android:id="@+id/fl_screencast_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="1"
+            android:visibility="gone" />
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/download_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/down_load"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9px"
+                android:text="离线下载"
+                android:textColor="@color/color_B3B3B3"
+                android:textSize="27px" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_e5" />
+
+        <LinearLayout
+            android:id="@+id/collect_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/collect_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/collect"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/collect_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9px"
+                android:text="收藏"
+                android:textColor="@color/color_B3B3B3"
+                android:textSize="27px" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_e5" />
+
+        <LinearLayout
+            android:id="@+id/share_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/iconfont_fenxiangx1"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9px"
+                android:text="分享"
+                android:textColor="@color/color_B3B3B3"
+                android:textSize="27px" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="@color/color_e5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="67px"
+            android:layout_margin="20px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/course_introduce"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/details_left"
+                android:gravity="center"
+                android:text="@string/course_introduce"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/course_zhang"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/details_right_null"
+                android:gravity="center"
+                android:text="@string/course_zhang"
+                android:textColor="@color/color_main" />
+
+            <TextView
+                android:id="@+id/course_discuss"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/details_right_null"
+                android:gravity="center"
+                android:text="@string/course_discuss"
+                android:textColor="@color/color_main"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20px"
+            android:background="@color/color_e5" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110px"
+        android:background="@color/color_f1"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/bottomBackLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/collectLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/collect"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/downLoadLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/down_load"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/opinionLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/information"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/iconfont_fenxiangx1"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

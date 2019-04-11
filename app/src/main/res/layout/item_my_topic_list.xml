@@ -113,12 +113,12 @@
         android:layout_marginTop="@dimen/y7"
         android:gravity="center_horizontal">
 
-        <com.yizhilu.widget.NineGridTestLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        <com.fenbitou.widget.NineGridTestLayout xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/layout_nine_grid"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:sapcing="4dp">>
-        </com.yizhilu.widget.NineGridTestLayout>
+        </com.fenbitou.widget.NineGridTestLayout>
     </LinearLayout>
 
     <LinearLayout

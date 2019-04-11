@@ -33,7 +33,7 @@
                 android:textColor="@android:color/black"
                 android:textSize="15sp" />
 
-            <com.yizhilu.widget.AutoScrollView
+            <com.fenbitou.widget.AutoScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingBottom="10dp"
@@ -47,7 +47,7 @@
                     android:text="1，xxxxxxxx\n2，ooooooooo"
                     android:textColor="#666"
                     android:textSize="14sp" />
-            </com.yizhilu.widget.AutoScrollView>
+            </com.fenbitou.widget.AutoScrollView>
 
 
             <Button

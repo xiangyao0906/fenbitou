@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.yizhilu.community.GroupMenberActivity">
+    tools:context="com.fenbitou.community.GroupMenberActivity">
 
     <include layout="@layout/layout_public_head"></include>
 

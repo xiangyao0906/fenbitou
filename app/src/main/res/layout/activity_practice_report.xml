@@ -330,7 +330,7 @@
                     </LinearLayout>
                 </RelativeLayout>
 
-                <com.yizhilu.widget.NoScrollGridView
+                <com.fenbitou.widget.NoScrollGridView
                     android:id="@+id/gridView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -339,7 +339,7 @@
                     android:horizontalSpacing="@dimen/x9"
                     android:numColumns="7"
                     android:verticalSpacing="@dimen/y6" >
-                </com.yizhilu.widget.NoScrollGridView>
+                </com.fenbitou.widget.NoScrollGridView>
 
                 <View
                     android:layout_width="match_parent"
@@ -446,7 +446,7 @@
                     android:layout_height="1dp"
                     android:background="@color/color_c9" />
 
-                <com.yizhilu.widget.NoScrollExpandableListView
+                <com.fenbitou.widget.NoScrollExpandableListView
                     android:id="@+id/reportListView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

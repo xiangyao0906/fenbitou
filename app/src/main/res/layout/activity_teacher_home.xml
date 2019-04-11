@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.yizhilu.eduapp.TeacherHomeActivity">
+    tools:context="com.fenbitou.wantongzaixian.TeacherHomeActivity">
 
     <include layout="@layout/layout_public_head"></include>
 

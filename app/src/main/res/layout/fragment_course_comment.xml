@@ -99,12 +99,12 @@
                         android:text="@string/no_discuss" />
                 </LinearLayout>
 
-                <com.yizhilu.widget.NoScrollListView
+                <com.fenbitou.widget.NoScrollListView
                     android:id="@+id/discuss_list_view"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scrollbars="none" >
-                </com.yizhilu.widget.NoScrollListView>
+                </com.fenbitou.widget.NoScrollListView>
             </LinearLayout>
         </ScrollView>
         <include

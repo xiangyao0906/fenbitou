@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.easefun.polyv:polyvUpload:2.2.2@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/polyvUpload-2.2.2.aar/e7f4c56c4d1ecde7ee359594dddca0e7/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/polyvUpload-2.2.2.aar/e7f4c56c4d1ecde7ee359594dddca0e7/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.easefun.polyv/polyvUpload/2.2.2/59681206785bbf648fa92d8667e750148886e374/polyvUpload-2.2.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

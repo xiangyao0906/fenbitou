@@ -47,7 +47,7 @@
                         android:text="@string/buy_course"
                         android:textColor="@color/black" />
                 </LinearLayout>
-				<com.yizhilu.widget.NoScrollListView
+				<com.fenbitou.widget.NoScrollListView
 				    android:id="@+id/payment_course_listView"
 				    android:layout_width="match_parent"
 				    android:layout_height="wrap_content"

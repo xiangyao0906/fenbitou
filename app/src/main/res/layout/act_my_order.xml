@@ -105,10 +105,10 @@
             android:background="#00000000"
             android:visibility="gone">
 
-            <com.yizhilu.widget.NoScrollListView
+            <com.fenbitou.widget.NoScrollListView
                 android:id="@+id/statucListView"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"></com.yizhilu.widget.NoScrollListView>
+                android:layout_height="match_parent"></com.fenbitou.widget.NoScrollListView>
 
         </LinearLayout>
     </FrameLayout>

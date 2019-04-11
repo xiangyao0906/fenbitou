@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.easefun.polyv:polyvWidget:1.3.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/polyvWidget-1.3.1.aar/19dfe44b06f813810862bc8c6c246a38/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/polyvWidget-1.3.1.aar/19dfe44b06f813810862bc8c6c246a38/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.easefun.polyv/polyvWidget/1.3.1/3d73ff3130539a8a464cf6fdcaeef69747a840ea/polyvWidget-1.3.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

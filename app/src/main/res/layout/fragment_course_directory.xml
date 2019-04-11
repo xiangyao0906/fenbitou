@@ -14,7 +14,7 @@
             android:orientation="vertical" >
 
 
-            <com.yizhilu.widget.NoScrollGridView
+            <com.fenbitou.widget.NoScrollGridView
                 android:id="@+id/grid_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -29,7 +29,7 @@
                 android:layout_height="1dp"
                 android:background="@color/color_f6"/>
 
-            <com.yizhilu.widget.NoScrollExpandableListView
+            <com.fenbitou.widget.NoScrollExpandableListView
                 android:id="@+id/expandable_list_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

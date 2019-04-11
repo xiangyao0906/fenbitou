@@ -50,7 +50,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.yizhilu.widget.NoScrollListView
+        <com.fenbitou.widget.NoScrollListView
             android:id="@+id/listView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

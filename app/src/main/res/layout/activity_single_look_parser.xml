@@ -38,7 +38,7 @@
                 <include
                     layout="@layout/include_expand_layout"/>
                 <!-- 选项的列表 -->
-                <com.yizhilu.widget.NoScrollListView
+                <com.fenbitou.widget.NoScrollListView
                     android:id="@+id/question_list"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -132,7 +132,7 @@
                         android:textSize="@dimen/x12"
                         android:textColor="@color/color_33"
                         android:visibility="gone"/>
-                    <com.yizhilu.widget.NoScrollListView
+                    <com.fenbitou.widget.NoScrollListView
                         android:id="@+id/completionListView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -166,7 +166,7 @@
                         android:textSize="@dimen/x12"
                         android:visibility="gone" />
                     <!-- 填空题正确答案列表 -->
-                    <com.yizhilu.widget.NoScrollListView
+                    <com.fenbitou.widget.NoScrollListView
                         android:id="@+id/completion_parser_list"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

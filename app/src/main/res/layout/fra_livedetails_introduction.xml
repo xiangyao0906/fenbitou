@@ -119,12 +119,12 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical" >
 
-                    <com.yizhilu.widget.NoScrollListView
+                    <com.fenbitou.widget.NoScrollListView
                         android:id="@+id/teacher_listview"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:divider="@null" >
-                    </com.yizhilu.widget.NoScrollListView>
+                    </com.fenbitou.widget.NoScrollListView>
                 </LinearLayout>
             </LinearLayout>
 

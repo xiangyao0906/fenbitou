@@ -97,12 +97,12 @@
                         android:textColor="@color/color_33"
                         android:textSize="@dimen/x16" />
 
-                    <com.yizhilu.widget.NoScrollListView
+                    <com.fenbitou.widget.NoScrollListView
                         android:id="@+id/lv_kecheng"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:divider="@null" >
-                    </com.yizhilu.widget.NoScrollListView>
+                    </com.fenbitou.widget.NoScrollListView>
 
                     <LinearLayout
                         android:id="@+id/show_course_linear"
@@ -140,12 +140,12 @@
                         android:textColor="@color/color_33"
                         android:textSize="@dimen/x16" />
 
-                    <com.yizhilu.widget.NoScrollListView
+                    <com.fenbitou.widget.NoScrollListView
                         android:id="@+id/lv_wenzhang"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:divider="@null" >
-                    </com.yizhilu.widget.NoScrollListView>
+                    </com.fenbitou.widget.NoScrollListView>
 
                     <LinearLayout
                         android:id="@+id/show_article_linear"

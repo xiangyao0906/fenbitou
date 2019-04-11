@@ -35,7 +35,7 @@
                         android:layout_marginLeft="@dimen/x14"
                         android:background="@color/color_e5" />
 
-                    <com.yizhilu.widget.NoScrollListView
+                    <com.fenbitou.widget.NoScrollListView
                         android:id="@+id/studyRecordList"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"

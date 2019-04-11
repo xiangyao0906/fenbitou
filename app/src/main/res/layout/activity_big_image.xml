@@ -5,7 +5,7 @@
     android:background="@color/tabText"
     android:orientation="vertical">
 
-    <com.yizhilu.widget.PhotoViewPager
+    <com.fenbitou.widget.PhotoViewPager
         android:id="@+id/photo_viewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

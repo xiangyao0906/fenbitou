@@ -105,9 +105,6 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant_run_split_apk_resources" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/javac" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/jniLibs" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/legacy_multidex_aapt_derived_proguard_rules" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/legacy_multidex_main_dex_list" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/lint_jar" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/manifest-checker" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/merged_assets" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/merged_manifests" />
@@ -131,86 +128,106 @@
     <orderEntry type="jdk" jdkName="Android API 27 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Gradle: com.android.support.constraint:constraint-layout-solver:1.0.2@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.squareup.okhttp3:okhttp:3.5.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:recyclerview-v7:27.1.1@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.8.1@jar" level="project" />
+    <orderEntry type="library" name="Gradle: tv.danmaku.ijk.media:ijkplayer-java:0.8.8@aar" level="project" />
+    <orderEntry type="library" name="Gradle: android.arch.lifecycle:viewmodel:1.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.gavin.com.library:stickyDecoration:1.1.2@aar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:/Users/xiangyao/Desktop/fenbitou/app/libs/ShareSDK-QQ-3.0.1.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-v4:27.1.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.easefun.polyv:polyvGif:2.2.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: android.arch.core:runtime:1.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.easefun.polyv:polyvDownload:2.7.3@aar" level="project" />
+    <orderEntry type="library" name="Gradle: cz.msebera.android:httpclient:4.3.6@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.exoplayer:exoplayer:r1.5.11@aar" level="project" />
+    <orderEntry type="library" name="Gradle: de.hdodenhof:circleimageview:2.2.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.yuweiguocn:GreenDaoUpgradeHelper:v1.4.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support.constraint:constraint-layout:1.0.2@aar" level="project" />
+    <orderEntry type="library" name="Gradle: org.greenrobot:greendao:3.2.2@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:/Users/xiangyao/Desktop/fenbitou/app/libs/ShareSDK-Wechat-Moments-3.0.1.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-core-ui:27.1.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: org.greenrobot:eventbus:3.0.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.commons:commons-compress:1.12@jar" level="project" />
+    <orderEntry type="library" name="Gradle: io.reactivex:rxandroid:1.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:/Users/xiangyao/Desktop/fenbitou/app/libs/ShareSDK-Core-3.0.1.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:/Users/xiangyao/Desktop/fenbitou/app/libs/admastersdk_v2.1.3.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.bumptech.glide:glide:3.7.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.jakewharton.rxbinding:rxbinding:0.4.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: tv.danmaku.ijk.media:ijkplayer-exo:0.8.8@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.sunfusheng:marqueeview:1.2.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-vector-drawable:27.1.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:/Users/xiangyao/Desktop/fenbitou/app/libs/MobCommons-2017.0801.1522.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.easefun.polyv:polyvModuleABI:1.6.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.aliyun.ams:alicloud-android-utdid:1.1.5.3@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.8.5@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:/Users/xiangyao/Desktop/fenbitou/app/libs/ShareSDK-Wechat-3.0.1.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:multidex:1.0.2@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.jakewharton:butterknife-annotations:8.8.1@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.baoyz.swipemenulistview:library:1.3.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: net.lingala.zip4j:zip4j:1.3.2@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.aliyun.ams:alicloud-android-utils:1.0.3@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.zzhoujay.markdown:markdown:1.0.5@aar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:/Users/xiangyao/Desktop/fenbitou/app/libs/ShareSDK-Wechat-Core-3.0.1.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-core:1.3@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.easefun.polyv:polyvPlayerABI:1.7.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.zhy:autolayout:1.4.5@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-media-compat:27.1.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: me.drakeet.materialdialog:library:1.3.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-fragment:27.1.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: org.greenrobot:greendao-api:3.2.2@jar" level="project" />
+    <orderEntry type="library" name="Gradle: org.zackratos:ultimatebar:1.0.3@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.lsjwzh:materialloadingprogressbar:0.5.8-RELEASE@aar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:livedata-core:1.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:runtime:1.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:transition:27.1.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:common:1.1.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: jp.wasabeef:glide-transformations:2.0.1@aar" level="project" />
-    <orderEntry type="library" name="Gradle: android.arch.lifecycle:viewmodel:1.1.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.gavin.com.library:stickyDecoration:1.1.2@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.aliyun.ams:alicloud-android-httpdns:1.1.3@jar" level="project" />
     <orderEntry type="library" name="Gradle: __local_aars__:/Users/xiangyao/Desktop/fenbitou/app/libs/uk-co-senab-photoview.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.daimajia.numberprogressbar:library:1.4@aar" level="project" />
-    <orderEntry type="library" name="Gradle: io.socket:socket.io-client:0.8.3@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:/Users/xiangyao/Desktop/fenbitou/app/libs/ShareSDK-QQ-3.0.1.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:support-v4:27.1.1@aar" level="project" />
-    <orderEntry type="library" name="Gradle: io.socket:engine.io-client:0.8.3@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:cardview-v7:27.1.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:design:27.1.1@aar" level="project" />
-    <orderEntry type="library" name="Gradle: android.arch.core:runtime:1.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.squareup.retrofit2:retrofit:2.1.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:animated-vector-drawable:27.1.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.jaeger.ninegridimageview:library:1.1.1@aar" level="project" />
-    <orderEntry type="library" name="Gradle: cz.msebera.android:httpclient:4.3.6@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.squareup.okio:okio:1.11.0@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.github.yuweiguocn:GreenDaoUpgradeHelper:v1.4.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: __local_aars__:/Users/xiangyao/Desktop/fenbitou/app/libs/libammsdk.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support.constraint:constraint-layout:1.0.2@aar" level="project" />
-    <orderEntry type="library" name="Gradle: org.greenrobot:greendao:3.2.2@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:/Users/xiangyao/Desktop/fenbitou/app/libs/ShareSDK-Wechat-Moments-3.0.1.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: __local_aars__:/Users/xiangyao/Desktop/fenbitou/app/libs/ShareSDK-SinaWeibo-3.0.1.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:support-core-ui:27.1.1@aar" level="project" />
-    <orderEntry type="library" name="Gradle: org.greenrobot:eventbus:3.0.0@jar" level="project" />
-    <orderEntry type="library" name="Gradle: io.reactivex:rxandroid:1.1.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:/Users/xiangyao/Desktop/fenbitou/app/libs/ShareSDK-Core-3.0.1.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.easefun.polyv:polyvPlayer:2.7.3@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.easefun.polyv:polyvScreencast:0.2.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.jakewharton:butterknife:8.8.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:appcompat-v7:27.1.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.zhy:flowlayout-lib:1.0.3@aar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:/Users/xiangyao/Desktop/fenbitou/app/libs/admastersdk_v2.1.3.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.github.bumptech.glide:glide:3.7.0@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.jakewharton.rxbinding:rxbinding:0.4.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.loopj.android:android-async-http:1.4.9@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.sunfusheng:marqueeview:1.2.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:support-vector-drawable:27.1.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.squareup.retrofit2:converter-gson:2.1.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: __local_aars__:/Users/xiangyao/Desktop/fenbitou/app/libs/MobTools-2017.0801.1522.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:/Users/xiangyao/Desktop/fenbitou/app/libs/MobCommons-2017.0801.1522.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: __local_aars__:/Users/xiangyao/Desktop/fenbitou/app/libs/universal-image-loader-1.9.3-SNAPSHOT.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-core-utils:27.1.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-annotations:27.1.1@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.github.ctiao:DanmakuFlameMaster:0.6.2@aar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:/Users/xiangyao/Desktop/fenbitou/app/libs/ShareSDK-Wechat-3.0.1.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:multidex:1.0.2@aar" level="project" />
+    <orderEntry type="library" name="Gradle: pl.droidsonroids.gif:android-gif-drawable:1.2.8@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.ctiao:DanmakuFlameMaster:0.9.25@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.daimajia.swipelayout:library:1.2.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.android.support:multidex-instrumentation:1.0.2@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.jakewharton:butterknife-annotations:8.8.1@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.squareup.okhttp3:okhttp:3.3.1@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.easefun.polyv:polyvSub:2.7.3@aar" level="project" />
     <orderEntry type="library" name="Gradle: __local_aars__:/Users/xiangyao/Desktop/fenbitou/app/libs/alipaySDK-20150602.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: io.reactivex:rxjava:1.1.0@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.baoyz.swipemenulistview:library:1.3.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.easefun.polyv:polyvScreencastAAR:1.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.android.support:multidex:1.0.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: __local_aars__:/Users/xiangyao/Desktop/fenbitou/app/libs/ShareSDK-Wechat-Favorite-3.0.1.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: __local_aars__:/Users/xiangyao/Desktop/fenbitou/app/libs/ShareSDK-QZone-3.0.1.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.zzhoujay.markdown:markdown:1.0.5@aar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:/Users/xiangyao/Desktop/fenbitou/app/libs/ShareSDK-Wechat-Core-3.0.1.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.squareup.okio:okio:1.8.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.jakewharton:disklrucache:2.0.2@jar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: junit:junit:4.12@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-compat:27.1.1@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-core:1.3@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.zhy:autolayout:1.4.5@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:support-media-compat:27.1.1@aar" level="project" />
-    <orderEntry type="library" name="Gradle: me.drakeet.materialdialog:library:1.3.1@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:support-fragment:27.1.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.easefun.polyv:polyvWidget:1.3.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.tencent.bugly:crashreport:2.6.6.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.just.agentweb:agentweb:1.0.3@aar" level="project" />
-    <orderEntry type="library" name="Gradle: org.greenrobot:greendao-api:3.2.2@jar" level="project" />
-    <orderEntry type="library" name="Gradle: org.zackratos:ultimatebar:1.0.3@aar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.core:common:1.1.0@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.lsjwzh:materialloadingprogressbar:0.5.8-RELEASE@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.orhanobut:logger:2.1.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.zzhoujay.richtext:richtext:3.0.7@aar" level="project" />
     <orderEntry type="module" module-name="sliderLibrary" />
     <orderEntry type="module" module-name="magicindicator" />
     <orderEntry type="module" module-name="swipeToLoadLayout" />
     <orderEntry type="module" module-name="okhttputils" />
-    <orderEntry type="module" module-name="polyvAndroidSDKGif1.0" />
     <orderEntry type="module" module-name="nicedialog" />
     <orderEntry type="library" name="Gradle: org.apache.http.legacy-android-27" level="project" />
   </component>

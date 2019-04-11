@@ -32,7 +32,7 @@
             <include
                 layout="@layout/include_expand_layout"/>
             <!-- 选择判断选项的列表 -->
-            <com.yizhilu.widget.NoScrollListView
+            <com.fenbitou.widget.NoScrollListView
                 android:id="@+id/optionListView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
                 android:scrollbars="none"
                 android:visibility="gone"/>
             <!-- 填空题 -->
-            <com.yizhilu.widget.NoScrollListView
+            <com.fenbitou.widget.NoScrollListView
                 android:id="@+id/completionListView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

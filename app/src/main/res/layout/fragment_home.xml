@@ -103,7 +103,7 @@
                     </RelativeLayout>
                 </RelativeLayout>
 
-                <com.yizhilu.widget.NoScrollGridView
+                <com.fenbitou.widget.NoScrollGridView
                     android:id="@+id/recommend_grid_view"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -161,7 +161,7 @@
 
                 <!-- 热门推荐的课程布局 -->
 
-                <com.yizhilu.widget.NoScrollGridView
+                <com.fenbitou.widget.NoScrollGridView
                     android:id="@+id/hot_grid_view"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

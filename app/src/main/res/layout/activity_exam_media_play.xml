@@ -4,9 +4,9 @@
     android:id="@+id/activity_exam_media_play"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.yizhilu.Exam.ExamMediaPlayActivity">
+    tools:context="com.fenbitou.Exam.ExamMediaPlayActivity">
 
-    <com.yizhilu.course.video.SpeedVideoPlayer
+    <com.fenbitou.course.video.SpeedVideoPlayer
         android:id="@+id/videoPlayer"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
