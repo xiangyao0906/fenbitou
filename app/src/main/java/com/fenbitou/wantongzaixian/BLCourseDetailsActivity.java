@@ -113,6 +113,11 @@ import butterknife.BindViews;
 import butterknife.OnClick;
 import okhttp3.Call;
 
+/**
+ * Description: 课程详情
+ * @author xiangyao
+ * Created by 2019/4/11 5:10 PM
+ */
 public class BLCourseDetailsActivity extends BaseActivity {
     @BindView(R.id.view_pager)
     ViewPager viewPager;
