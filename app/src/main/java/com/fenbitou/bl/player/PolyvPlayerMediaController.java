@@ -292,132 +292,132 @@ public class PolyvPlayerMediaController extends PolyvBaseMediaController impleme
 
     private void findIdAndNew() {
         //竖屏的view
-        rl_port = (RelativeLayout) view.findViewById(R.id.rl_port);
-        iv_land = (ImageView) view.findViewById(R.id.iv_land);
-        iv_play = (ImageView) view.findViewById(R.id.iv_play);
-        tv_curtime = (TextView) view.findViewById(R.id.tv_curtime);
-        tv_tottime = (TextView) view.findViewById(R.id.tv_tottime);
-        tv_bit_portrait = (TextView) view.findViewById(R.id.tv_bit_portrait);
-        tv_speed_portrait = (TextView) view.findViewById(R.id.tv_speed_portrait);
-        tv_route_portrait = (TextView) view.findViewById(R.id.tv_route_portrait);
-        sb_play = (SeekBar) view.findViewById(R.id.sb_play);
+        rl_port = view.findViewById(R.id.rl_port);
+        iv_land = view.findViewById(R.id.iv_land);
+        iv_play = view.findViewById(R.id.iv_play);
+        tv_curtime = view.findViewById(R.id.tv_curtime);
+        tv_tottime = view.findViewById(R.id.tv_tottime);
+        tv_bit_portrait = view.findViewById(R.id.tv_bit_portrait);
+        tv_speed_portrait = view.findViewById(R.id.tv_speed_portrait);
+        tv_route_portrait = view.findViewById(R.id.tv_route_portrait);
+        sb_play = view.findViewById(R.id.sb_play);
         //竖屏的播放速度布局的view
-        rl_center_speed_portrait = (RelativeLayout) view.findViewById(R.id.rl_center_speed_portrait);
-        tv_speed05_portrait = (TextView) view.findViewById(R.id.tv_speed05_portrait);
-        tv_speed10_portrait = (TextView) view.findViewById(R.id.tv_speed10_portrait);
-        tv_speed12_portrait = (TextView) view.findViewById(R.id.tv_speed12_portrait);
-        tv_speed15_portrait = (TextView) view.findViewById(R.id.tv_speed15_portrait);
-        tv_speed20_portrait = (TextView) view.findViewById(R.id.tv_speed20_portrait);
+        rl_center_speed_portrait = view.findViewById(R.id.rl_center_speed_portrait);
+        tv_speed05_portrait = view.findViewById(R.id.tv_speed05_portrait);
+        tv_speed10_portrait = view.findViewById(R.id.tv_speed10_portrait);
+        tv_speed12_portrait = view.findViewById(R.id.tv_speed12_portrait);
+        tv_speed15_portrait = view.findViewById(R.id.tv_speed15_portrait);
+        tv_speed20_portrait = view.findViewById(R.id.tv_speed20_portrait);
         //竖屏的播放码率布局的view
-        rl_center_bit_portrait = (RelativeLayout) view.findViewById(R.id.rl_center_bit_portrait);
-        tv_sc_portrait = (TextView) view.findViewById(R.id.tv_sc_portrait);
-        tv_hd_portrait = (TextView) view.findViewById(R.id.tv_hd_portrait);
-        tv_flu_portrait = (TextView) view.findViewById(R.id.tv_flu_portrait);
-        tv_auto_portrait = (TextView) view.findViewById(R.id.tv_auto_portrait);
+        rl_center_bit_portrait = view.findViewById(R.id.rl_center_bit_portrait);
+        tv_sc_portrait = view.findViewById(R.id.tv_sc_portrait);
+        tv_hd_portrait = view.findViewById(R.id.tv_hd_portrait);
+        tv_flu_portrait = view.findViewById(R.id.tv_flu_portrait);
+        tv_auto_portrait = view.findViewById(R.id.tv_auto_portrait);
         //视频的播放线路布局的view
-        rl_center_route_portrait = (RelativeLayout) view.findViewById(R.id.rl_center_route_portrait);
-        tv_route1_portrait = (TextView) view.findViewById(R.id.tv_route1_portrait);
-        tv_route2_portrait = (TextView) view.findViewById(R.id.tv_route2_portrait);
-        tv_route3_portrait = (TextView) view.findViewById(R.id.tv_route3_portrait);
+        rl_center_route_portrait = view.findViewById(R.id.rl_center_route_portrait);
+        tv_route1_portrait = view.findViewById(R.id.tv_route1_portrait);
+        tv_route2_portrait = view.findViewById(R.id.tv_route2_portrait);
+        tv_route3_portrait = view.findViewById(R.id.tv_route3_portrait);
         //横屏的view
-        rl_land = (RelativeLayout) view.findViewById(R.id.rl_land);
-        rl_top = (RelativeLayout) view.findViewById(R.id.rl_top);
-        rl_bot = (RelativeLayout) view.findViewById(R.id.rl_bot);
-        iv_port = (ImageView) view.findViewById(R.id.iv_port);
-        iv_play_land = (ImageView) view.findViewById(R.id.iv_play_land);
-        iv_finish = (ImageView) view.findViewById(R.id.iv_finish);
-        tv_curtime_land = (TextView) view.findViewById(R.id.tv_curtime_land);
-        tv_tottime_land = (TextView) view.findViewById(R.id.tv_tottime_land);
-        sb_play_land = (PolyvTickSeekBar) view.findViewById(R.id.sb_play_land);
-        tv_title = (TextView) view.findViewById(R.id.tv_title);
-        iv_set = (ImageView) view.findViewById(R.id.iv_set);
-        iv_share = (ImageView) view.findViewById(R.id.iv_share);
-        iv_dmswitch = (ImageView) view.findViewById(R.id.iv_dmswitch);
-        tv_speed = (TextView) view.findViewById(R.id.tv_speed);
-        tv_bit = (TextView) view.findViewById(R.id.tv_bit);
-        tv_route = (TextView) view.findViewById(R.id.tv_route);
+        rl_land = view.findViewById(R.id.rl_land);
+        rl_top = view.findViewById(R.id.rl_top);
+        rl_bot = view.findViewById(R.id.rl_bot);
+        iv_port = view.findViewById(R.id.iv_port);
+        iv_play_land = view.findViewById(R.id.iv_play_land);
+        iv_finish = view.findViewById(R.id.iv_finish);
+        tv_curtime_land = view.findViewById(R.id.tv_curtime_land);
+        tv_tottime_land = view.findViewById(R.id.tv_tottime_land);
+        sb_play_land = view.findViewById(R.id.sb_play_land);
+        tv_title = view.findViewById(R.id.tv_title);
+        iv_set = view.findViewById(R.id.iv_set);
+        iv_share = view.findViewById(R.id.iv_share);
+        iv_dmswitch = view.findViewById(R.id.iv_dmswitch);
+        tv_speed = view.findViewById(R.id.tv_speed);
+        tv_bit = view.findViewById(R.id.tv_bit);
+        tv_route = view.findViewById(R.id.tv_route);
         //设置布局的view
-        rl_center_set = (RelativeLayout) view.findViewById(R.id.rl_center_set);
-        sb_light = (SeekBar) view.findViewById(R.id.sb_light);
-        sb_volume = (SeekBar) view.findViewById(R.id.sb_volume);
-        tv_full = (TextView) view.findViewById(R.id.tv_full);
-        tv_fit = (TextView) view.findViewById(R.id.tv_fit);
-        tv_sixteennine = (TextView) view.findViewById(R.id.tv_sixteennine);
-        tv_fourthree = (TextView) view.findViewById(R.id.tv_fourthree);
-        tv_srt1 = (TextView) view.findViewById(R.id.tv_srt1);
-        tv_srt2 = (TextView) view.findViewById(R.id.tv_srt2);
-        tv_srt3 = (TextView) view.findViewById(R.id.tv_srt3);
-        tv_srtnone = (TextView) view.findViewById(R.id.tv_srtnone);
-        iv_close_set = (ImageView) view.findViewById(R.id.iv_close_set);
-        ll_adaptive_mode = (LinearLayout) findViewById(R.id.ll_adaptive_mode);
-        ll_subtitle = (LinearLayout) findViewById(R.id.ll_subtitle);
-        ll_subtitle_b = (LinearLayout) findViewById(R.id.ll_subtitle_b);
+        rl_center_set = view.findViewById(R.id.rl_center_set);
+        sb_light = view.findViewById(R.id.sb_light);
+        sb_volume = view.findViewById(R.id.sb_volume);
+        tv_full = view.findViewById(R.id.tv_full);
+        tv_fit = view.findViewById(R.id.tv_fit);
+        tv_sixteennine = view.findViewById(R.id.tv_sixteennine);
+        tv_fourthree = view.findViewById(R.id.tv_fourthree);
+        tv_srt1 = view.findViewById(R.id.tv_srt1);
+        tv_srt2 = view.findViewById(R.id.tv_srt2);
+        tv_srt3 = view.findViewById(R.id.tv_srt3);
+        tv_srtnone = view.findViewById(R.id.tv_srtnone);
+        iv_close_set = view.findViewById(R.id.iv_close_set);
+        ll_adaptive_mode = findViewById(R.id.ll_adaptive_mode);
+        ll_subtitle = findViewById(R.id.ll_subtitle);
+        ll_subtitle_b = findViewById(R.id.ll_subtitle_b);
         //侧边布局的view
-        ll_side = (LinearLayout) view.findViewById(R.id.ll_side);
-        iv_danmu = (ImageView) view.findViewById(R.id.iv_danmu);
-        iv_screens = (ImageView) view.findViewById(R.id.iv_screens);
+        ll_side = view.findViewById(R.id.ll_side);
+        iv_danmu = view.findViewById(R.id.iv_danmu);
+        iv_screens = view.findViewById(R.id.iv_screens);
         //左侧边布局的view
-        ll_left_side = (LinearLayout) view.findViewById(R.id.ll_left_side);
-        ll_left_side_land = (LinearLayout) view.findViewById(R.id.ll_left_side_land);
-        ll_left_side_t = (LinearLayout) view.findViewById(R.id.ll_left_side_t);
-        ll_left_side_t_land = (LinearLayout) view.findViewById(R.id.ll_left_side_t_land);
-        iv_video = (ImageView) view.findViewById(R.id.iv_video);
-        iv_video_land = (ImageView) view.findViewById(R.id.iv_video_land);
-        iv_audio = (ImageView) view.findViewById(R.id.iv_audio);
-        iv_audio_land = (ImageView) view.findViewById(R.id.iv_audio_land);
-        tv_video = (TextView) view.findViewById(R.id.tv_video);
-        tv_video_land = (TextView) view.findViewById(R.id.tv_video_land);
-        tv_audio = (TextView) view.findViewById(R.id.tv_audio);
-        tv_audio_land = (TextView) view.findViewById(R.id.tv_audio_land);
+        ll_left_side = view.findViewById(R.id.ll_left_side);
+        ll_left_side_land = view.findViewById(R.id.ll_left_side_land);
+        ll_left_side_t = view.findViewById(R.id.ll_left_side_t);
+        ll_left_side_t_land = view.findViewById(R.id.ll_left_side_t_land);
+        iv_video = view.findViewById(R.id.iv_video);
+        iv_video_land = view.findViewById(R.id.iv_video_land);
+        iv_audio = view.findViewById(R.id.iv_audio);
+        iv_audio_land = view.findViewById(R.id.iv_audio_land);
+        tv_video = view.findViewById(R.id.tv_video);
+        tv_video_land = view.findViewById(R.id.tv_video_land);
+        tv_audio = view.findViewById(R.id.tv_audio);
+        tv_audio_land = view.findViewById(R.id.tv_audio_land);
         //弹幕布局的view
-        rl_center_danmu = (RelativeLayout) view.findViewById(R.id.rl_center_danmu);
-        rl_dmbot = (RelativeLayout) view.findViewById(R.id.rl_dmbot);
-        iv_dmset = (ImageView) view.findViewById(R.id.iv_dmset);
-        iv_finish_danmu = (ImageView) view.findViewById(R.id.iv_finish_danmu);
-        et_dmedit = (EditText) view.findViewById(R.id.et_dmedit);
-        iv_dmwhite = (ImageView) view.findViewById(R.id.iv_dmwhite);
-        iv_dmblue = (ImageView) view.findViewById(R.id.iv_dmblue);
-        iv_dmgreen = (ImageView) view.findViewById(R.id.iv_dmgreen);
-        iv_dmpurple = (ImageView) view.findViewById(R.id.iv_dmpurple);
-        iv_dmred = (ImageView) view.findViewById(R.id.iv_dmred);
-        iv_dmyellow = (ImageView) view.findViewById(R.id.iv_dmyellow);
-        tv_dmroll = (TextView) view.findViewById(R.id.tv_dmroll);
-        tv_dmtop = (TextView) view.findViewById(R.id.tv_dmtop);
-        tv_dmbottom = (TextView) view.findViewById(R.id.tv_dmbottom);
-        tv_dmfonts = (TextView) view.findViewById(R.id.tv_dmfonts);
-        tv_dmfontm = (TextView) view.findViewById(R.id.tv_dmfontm);
-        tv_dmfontl = (TextView) view.findViewById(R.id.tv_dmfontl);
-        tv_dmsend = (TextView) view.findViewById(R.id.tv_dmsend);
+        rl_center_danmu = view.findViewById(R.id.rl_center_danmu);
+        rl_dmbot = view.findViewById(R.id.rl_dmbot);
+        iv_dmset = view.findViewById(R.id.iv_dmset);
+        iv_finish_danmu = view.findViewById(R.id.iv_finish_danmu);
+        et_dmedit = view.findViewById(R.id.et_dmedit);
+        iv_dmwhite = view.findViewById(R.id.iv_dmwhite);
+        iv_dmblue = view.findViewById(R.id.iv_dmblue);
+        iv_dmgreen = view.findViewById(R.id.iv_dmgreen);
+        iv_dmpurple = view.findViewById(R.id.iv_dmpurple);
+        iv_dmred = view.findViewById(R.id.iv_dmred);
+        iv_dmyellow = view.findViewById(R.id.iv_dmyellow);
+        tv_dmroll = view.findViewById(R.id.tv_dmroll);
+        tv_dmtop = view.findViewById(R.id.tv_dmtop);
+        tv_dmbottom = view.findViewById(R.id.tv_dmbottom);
+        tv_dmfonts = view.findViewById(R.id.tv_dmfonts);
+        tv_dmfontm = view.findViewById(R.id.tv_dmfontm);
+        tv_dmfontl = view.findViewById(R.id.tv_dmfontl);
+        tv_dmsend = view.findViewById(R.id.tv_dmsend);
         //分享布局的view
-        rl_center_share = (RelativeLayout) view.findViewById(R.id.rl_center_share);
-        iv_shareqq = (ImageView) view.findViewById(R.id.iv_shareqq);
-        iv_sharewechat = (ImageView) view.findViewById(R.id.iv_sharewechat);
-        iv_shareweibo = (ImageView) view.findViewById(R.id.iv_shareweibo);
-        iv_close_share = (ImageView) view.findViewById(R.id.iv_close_share);
+        rl_center_share = view.findViewById(R.id.rl_center_share);
+        iv_shareqq = view.findViewById(R.id.iv_shareqq);
+        iv_sharewechat = view.findViewById(R.id.iv_sharewechat);
+        iv_shareweibo = view.findViewById(R.id.iv_shareweibo);
+        iv_close_share = view.findViewById(R.id.iv_close_share);
         //横屏的播放速度布局的view
-        rl_center_speed = (RelativeLayout) view.findViewById(R.id.rl_center_speed);
-        tv_speed05 = (TextView) view.findViewById(R.id.tv_speed05);
-        tv_speed10 = (TextView) view.findViewById(R.id.tv_speed10);
-        tv_speed12 = (TextView) view.findViewById(R.id.tv_speed12);
-        tv_speed15 = (TextView) view.findViewById(R.id.tv_speed15);
-        tv_speed20 = (TextView) view.findViewById(R.id.tv_speed20);
-        iv_close_speed = (ImageView) view.findViewById(R.id.iv_close_speed);
+        rl_center_speed = view.findViewById(R.id.rl_center_speed);
+        tv_speed05 = view.findViewById(R.id.tv_speed05);
+        tv_speed10 = view.findViewById(R.id.tv_speed10);
+        tv_speed12 = view.findViewById(R.id.tv_speed12);
+        tv_speed15 = view.findViewById(R.id.tv_speed15);
+        tv_speed20 = view.findViewById(R.id.tv_speed20);
+        iv_close_speed = view.findViewById(R.id.iv_close_speed);
         //横屏的播放码率布局的view
-        rl_center_bit = (RelativeLayout) view.findViewById(R.id.rl_center_bit);
-        tv_sc = (TextView) view.findViewById(R.id.tv_sc);
-        tv_hd = (TextView) view.findViewById(R.id.tv_hd);
-        tv_flu = (TextView) view.findViewById(R.id.tv_flu);
-        tv_auto = (TextView) view.findViewById(R.id.tv_auto);
-        iv_close_bit = (ImageView) view.findViewById(R.id.iv_close_bit);
+        rl_center_bit = view.findViewById(R.id.rl_center_bit);
+        tv_sc = view.findViewById(R.id.tv_sc);
+        tv_hd = view.findViewById(R.id.tv_hd);
+        tv_flu = view.findViewById(R.id.tv_flu);
+        tv_auto = view.findViewById(R.id.tv_auto);
+        iv_close_bit = view.findViewById(R.id.iv_close_bit);
         //横屏的播放线路布局的view
-        rl_center_route = (RelativeLayout) view.findViewById(R.id.rl_center_route);
-        tv_route1 = (TextView) view.findViewById(R.id.tv_route1);
-        tv_route2 = (TextView) view.findViewById(R.id.tv_route2);
-        tv_route3 = (TextView) view.findViewById(R.id.tv_route3);
-        iv_close_route = (ImageView) view.findViewById(R.id.iv_close_route);
+        rl_center_route = view.findViewById(R.id.rl_center_route);
+        tv_route1 = view.findViewById(R.id.tv_route1);
+        tv_route2 = view.findViewById(R.id.tv_route2);
+        tv_route3 = view.findViewById(R.id.tv_route3);
+        iv_close_route = view.findViewById(R.id.iv_close_route);
 
         sensorHelper = new PolyvSensorHelper(videoActivity);
-        tickTips = (PolyvTickTips) view.findViewById(R.id.fl_tt);
+        tickTips = view.findViewById(R.id.fl_tt);
         tickTips.setOnSeekClickListener(new PolyvTickTips.OnSeekClickListener() {
             @Override
             public void onSeekClick(PolyvTickSeekBar.TickData tickData) {
@@ -428,8 +428,8 @@ public class PolyvPlayerMediaController extends PolyvBaseMediaController impleme
             }
         });
 
-        polyvScreenLock = (ImageView) view.findViewById(R.id.polyv_screen_lock);
-        polyvScreenLockAudio = (ImageView) view.findViewById(R.id.polyv_screen_lock_audio);
+        polyvScreenLock = view.findViewById(R.id.polyv_screen_lock);
+        polyvScreenLockAudio = view.findViewById(R.id.polyv_screen_lock_audio);
     }
 
     public void showAudioLock(boolean show) {
@@ -721,10 +721,7 @@ public class PolyvPlayerMediaController extends PolyvBaseMediaController impleme
      */
     @Override
     public void show(int timeout) {
-        if (timeout < 0)
-            status_showalways = true;
-        else
-            status_showalways = false;
+        status_showalways = timeout < 0;
         if (PolyvScreenUtils.isLandscape(getContext()) && (polyvScreenLock.isSelected() || polyvScreenLockAudio.isSelected())) {
             setVisibility(View.VISIBLE);
 

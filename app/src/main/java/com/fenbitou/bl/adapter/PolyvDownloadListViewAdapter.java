@@ -24,7 +24,7 @@ import com.easefun.polyvsdk.download.listener.IPolyvDownloaderProgressListener;
 import com.easefun.polyvsdk.download.listener.IPolyvDownloaderSpeedListener;
 import com.easefun.polyvsdk.download.listener.IPolyvDownloaderStartListener;
 import com.fenbitou.bl.activity.PolyvMainActivity;
-import com.fenbitou.bl.activity.PolyvPlayerActivity;
+import com.fenbitou.bl.activity.BLLocalVideoActivity;
 import com.fenbitou.bl.bean.PolyvDownloadInfo;
 import com.fenbitou.bl.database.PolyvDownloadSQLiteHelper;
 import com.fenbitou.bl.util.PolyvErrorMessageUtils;
@@ -455,7 +455,7 @@ public class PolyvDownloadListViewAdapter extends BaseSwipeAdapter {
             int fileType = downloadInfo.getFileType();
             final PolyvDownloader downloader = PolyvDownloaderManager.getPolyvDownloader(vid, bitrate, fileType);
             if (tv_status.getText().equals(DOWNLOADED)) {
-                Intent intent = PolyvPlayerActivity.newIntent(context, PolyvPlayerActivity.PlayMode.portrait, vid, bitrate, true, true, fileType);
+                Intent intent = BLLocalVideoActivity.newIntent(context, BLLocalVideoActivity.PlayMode.landScape, vid, bitrate, true, true, fileType);
                 // 在线视频和下载的视频播放的时候只显示播放器窗口，用该参数来控制
                 intent.putExtra(PolyvMainActivity.IS_VLMS_ONLINE, false);
                 context.startActivity(intent);
@@ -477,5 +477,9 @@ public class PolyvDownloadListViewAdapter extends BaseSwipeAdapter {
                 }
             }
         }
+
+
+
     }
+
 }

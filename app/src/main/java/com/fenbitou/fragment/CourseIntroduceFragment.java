@@ -20,6 +20,7 @@ import com.fenbitou.entity.EntityPublic;
 import com.fenbitou.entity.PublicEntity;
 import com.fenbitou.entity.PublicEntityCallback;
 import com.fenbitou.entity.TeacherEntity;
+import com.fenbitou.wantongzaixian.BLCourseDetailsActivity;
 import com.fenbitou.wantongzaixian.ConfirmOrderActivity;
 import com.fenbitou.wantongzaixian.LoginActivity;
 import com.fenbitou.wantongzaixian.R;
@@ -69,12 +70,12 @@ public class CourseIntroduceFragment extends BaseFragment {
     private int userId, courseId;
     private EntityPublic entityPublic;
 
-//    private CourseDetails96kActivity courseDetailsActivity;
+    private BLCourseDetailsActivity courseDetailsActivity;
 
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-//        courseDetailsActivity = (CourseDetails96kActivity) context;
+        courseDetailsActivity = (BLCourseDetailsActivity) context;
     }
 
     @Override
@@ -170,6 +171,8 @@ public class CourseIntroduceFragment extends BaseFragment {
         if (getResources().getString(R.string.liji_look).equals(purchase)) {
 //            courseDetailsActivity.isPlayImmediately = true;
 //            courseDetailsActivity.verificationPlayVideo(0);
+
+
         } else {
             if (userId == -1) {
                 Intent intent = new Intent(getActivity(), LoginActivity.class);

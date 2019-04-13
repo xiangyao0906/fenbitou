@@ -101,7 +101,7 @@ public class DemoApplication extends MultiDexApplication {
             }
         });
         new Thread(new ThreadShow()).start();
-        downloadPath = getDiskCacheDir(this, "videodownload");
+        downloadPath = getDiskCacheDir(this, "fentouDownload");
 
     }
 
@@ -143,7 +143,7 @@ public class DemoApplication extends MultiDexApplication {
      * 设置下载视频目录
      */
     private void setDownloadDir() {
-        String rootDownloadDirName = "polyvdownload";
+        String rootDownloadDirName = "fentouDownload";
         ArrayList<File> externalFilesDirs = PolyvStorageUtils.getExternalFilesDirs(getApplicationContext());
         if (externalFilesDirs.size() == 0) {
             // TODO 没有可用的存储设备,后续不能使用视频缓存功能
@@ -188,7 +188,7 @@ public class DemoApplication extends MultiDexApplication {
                 }
 
                 //如果没有可移除的存储介质（例如 SD 卡），那么一定有内部（不可移除）存储介质可用，都不可用的情况在前面判断过了。
-                File saveDir = new File(PolyvDevMountInfo.getInstance().getInternalSDCardPath() + File.separator + "polyvdownload");
+                File saveDir = new File(PolyvDevMountInfo.getInstance().getInternalSDCardPath() + File.separator + "fentouDownload");
                 if (!saveDir.exists()) {
                     saveDir.mkdirs();//创建下载目录
                 }

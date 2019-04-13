@@ -64,10 +64,10 @@ import com.easefun.polyvsdk.video.listener.IPolyvOnVideoTimeoutListener;
 import com.easefun.polyvsdk.vo.PolyvADMatterVO;
 import com.easefun.polyvsdk.vo.PolyvQuestionVO;
 import com.easefun.polyvsdk.vo.PolyvVideoVO;
+import com.fenbitou.BLDowload.DownloadCourseActivity;
 import com.fenbitou.adapter.ViewPagerAdapter;
 import com.fenbitou.base.BaseActivity;
-import com.fenbitou.bl.activity.PolyvMainActivity;
-import com.fenbitou.bl.activity.PolyvPlayerActivity;
+import com.fenbitou.bl.activity.BLLocalVideoActivity;
 import com.fenbitou.bl.fragment.PolyvPlayerDanmuFragment;
 import com.fenbitou.bl.fragment.PolyvPlayerTabFragment;
 import com.fenbitou.bl.fragment.PolyvPlayerTopFragment;
@@ -115,6 +115,7 @@ import okhttp3.Call;
 
 /**
  * Description: 课程详情
+ *
  * @author xiangyao
  * Created by 2019/4/11 5:10 PM
  */
@@ -145,7 +146,7 @@ public class BLCourseDetailsActivity extends BaseActivity {
     private int parentId; //传递到DownSelect中的id
 
 
-    private static final String TAG = PolyvPlayerActivity.class.getSimpleName();
+    private static final String TAG = BLLocalVideoActivity.class.getSimpleName();
     private PolyvPlayerTopFragment topFragment;
     private PolyvPlayerTabFragment tabFragment;
     private PolyvPlayerViewPagerFragment viewPagerFragment;
@@ -258,11 +259,10 @@ public class BLCourseDetailsActivity extends BaseActivity {
     private View.OnClickListener flowButtonOnClickListener;
 
 
-
     //test
 
-    private String videoId="c538856dde2600e0096215c16592d4d3_c";
-    private String videoId2="c538856ddebaa3bf5d018909dd21746a_c";
+    private String videoId = "c538856dde2600e0096215c16592d4d3_c";
+    private String videoId2 = "c538856ddebaa3bf5d018909dd21746a_c";
 
     @Override
     protected int initContentView() {
@@ -272,7 +272,7 @@ public class BLCourseDetailsActivity extends BaseActivity {
     @Override
     protected void initComponent() {
 
-addUpVideoViewFragment();
+        addUpVideoViewFragment();
         fragments = new ArrayList<>(); // 存放fragment的集合
         viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager(), fragments);
         viewPager.setAdapter(viewPagerAdapter);
@@ -349,10 +349,10 @@ addUpVideoViewFragment();
         initScreencast();
 
         PolyvScreenUtils.generateHeight16_9(this);
-        int playModeCode = getIntent().getIntExtra("playMode", PolyvPlayerActivity.PlayMode.portrait.getCode());
-        PolyvPlayerActivity.PlayMode playMode = PolyvPlayerActivity.PlayMode.getPlayMode(playModeCode);
+        int playModeCode = getIntent().getIntExtra("playMode", BLLocalVideoActivity.PlayMode.portrait.getCode());
+        BLLocalVideoActivity.PlayMode playMode = BLLocalVideoActivity.PlayMode.getPlayMode(playModeCode);
         if (playMode == null)
-            playMode = PolyvPlayerActivity.PlayMode.portrait;
+            playMode = BLLocalVideoActivity.PlayMode.portrait;
         vid = getIntent().getStringExtra("value");
         bitrate = getIntent().getIntExtra("bitrate", PolyvBitRate.ziDong.getNum());
         boolean startNow = getIntent().getBooleanExtra("startNow", false);
@@ -911,7 +911,12 @@ addUpVideoViewFragment();
                 viewPager.setCurrentItem(2, false);
                 break;
             case R.id.download_layout:
-                play(videoId2,0,true,false);
+                Intent intent = new Intent();
+                intent.setClass(BLCourseDetailsActivity.this, DownloadCourseActivity.class);
+                intent.putExtra("publicEntity", publicEntity);
+                intent.putExtra("listId", parentId);
+                intent.putExtra("courseId", courseId);
+                startActivity(intent);
                 break;
         }
     }
@@ -995,8 +1000,7 @@ addUpVideoViewFragment();
                                 }
 
 
-
-                                ImageLoader.getInstance().displayImage( Address.IMAGE_NET + entity.getCourse().getMobileLogo(), iv_vlms_cover = ((ImageView) findViewById(R.id.iv_vlms_cover)),
+                                ImageLoader.getInstance().displayImage(Address.IMAGE_NET + entity.getCourse().getMobileLogo(), iv_vlms_cover = ((ImageView) findViewById(R.id.iv_vlms_cover)),
                                         new DisplayImageOptions.Builder().showImageOnLoading(R.drawable.polyv_demo).showImageForEmptyUri(R.drawable.polyv_demo).showImageOnFail(R.drawable.polyv_demo)
                                                 .bitmapConfig(Bitmap.Config.RGB_565).cacheInMemory(true).cacheOnDisk(true).build());
 
@@ -1164,6 +1168,7 @@ addUpVideoViewFragment();
             fragments.add(courseCommentFragment);
         }
     }
+
     /**
      * 初始化视频播放错误提示界面
      */
@@ -1172,6 +1177,7 @@ addUpVideoViewFragment();
 
         playErrorView.setShowRouteViewListener(() -> playRouteView.show(videoView));
     }
+
     /**
      * 初始化线路切换界面
      */
@@ -1219,7 +1225,6 @@ addUpVideoViewFragment();
             }
         });
     }
-
 
 
     @Override
@@ -1270,11 +1275,11 @@ addUpVideoViewFragment();
         danmuFragment = new PolyvPlayerDanmuFragment();
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         ft.add(R.id.fl_danmu, danmuFragment, "danmuFragment");
-        topFragment = new PolyvPlayerTopFragment();
-        topFragment.setArguments(getIntent().getExtras());
+//        topFragment = new PolyvPlayerTopFragment();
+//        topFragment.setArguments(getIntent().getExtras());
 //        tabFragment = new PolyvPlayerTabFragment();
 //        viewPagerFragment = new PolyvPlayerViewPagerFragment();
-        ft.add(R.id.fl_top, topFragment, "topFragmnet");
+//        ft.add(R.id.fl_top, topFragment, "topFragmnet");
 //        ft.add(R.id.fl_tab, tabFragment, "tabFragment");
 //        ft.add(R.id.fl_viewpager, viewPagerFragment, "viewPagerFragment");
         ft.commit();

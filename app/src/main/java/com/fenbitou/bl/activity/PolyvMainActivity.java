@@ -219,7 +219,7 @@ public class PolyvMainActivity extends Activity implements OnClickListener {
             case playAndDownload:
                 // 为免费的课程添加订单
                 addOrder(course.course_id);
-                Intent intent = new Intent(PolyvMainActivity.this, PolyvPlayerActivity.class);
+                Intent intent = new Intent(PolyvMainActivity.this, BLLocalVideoActivity.class);
                 Bundle bundle = new Bundle();
                 bundle.putBoolean(PolyvMainActivity.IS_VLMS_ONLINE, true);
                 bundle.putParcelable("course", course);

@@ -23,7 +23,7 @@ import android.widget.TextView;
 import com.easefun.polyvsdk.PolyvBitRate;
 import com.easefun.polyvsdk.sub.vlms.entity.PolyvCoursesInfo;
 import com.fenbitou.bl.activity.PolyvDownloadActivity;
-import com.fenbitou.bl.activity.PolyvPlayerActivity;
+import com.fenbitou.bl.activity.BLLocalVideoActivity;
 import com.fenbitou.bl.adapter.PolyvCurriculumListViewAdapter;
 import com.fenbitou.bl.util.PolyvVlmsHelper;
 import com.fenbitou.wantongzaixian.R;
@@ -127,7 +127,7 @@ public class PolyvCurriculumFragment extends Fragment implements OnClickListener
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (!adapter.getSideIconVisible()) {
                     String videoId = lists.get(position).lecture.vid;
-                    ((PolyvPlayerActivity) getActivity()).play(videoId, PolyvBitRate.ziDong.getNum(), true, false);
+                    ((BLLocalVideoActivity) getActivity()).play(videoId, PolyvBitRate.ziDong.getNum(), true, false);
 
 
 

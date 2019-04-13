@@ -12,6 +12,7 @@ import com.fenbitou.entity.EntityPublic;
 import com.fenbitou.entity.PublicEntity;
 import com.fenbitou.entity.PublicEntityCallback;
 import com.fenbitou.entity.downtListEvent;
+import com.fenbitou.wantongzaixian.BLCourseDetailsActivity;
 import com.fenbitou.wantongzaixian.R;
 import com.fenbitou.utils.Address;
 import com.fenbitou.utils.SharedPreferencesUtils;
@@ -46,13 +47,13 @@ public class CourseDirectoryFragment extends BaseFragment implements ExpandableL
     private CatalogueExpandableAdapter catalogueExpandableAdapter;
     private int courseId,userId;  //课程Id,用户Id
     private EntityPublic entityPublic;
-//    private CourseDetails96kActivity courseDetailsActivity;
+    private BLCourseDetailsActivity courseDetailsActivity;
     private boolean isok = false;
 
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-//        courseDetailsActivity = (CourseDetails96kActivity) context;
+        courseDetailsActivity = (BLCourseDetailsActivity) context;
     }
 
     @Override
@@ -147,6 +148,7 @@ public class CourseDirectoryFragment extends BaseFragment implements ExpandableL
         catalogueExpandableAdapter.notifyDataSetChanged();
 //        courseDetailsActivity.isPlayImmediately = true;
 //        courseDetailsActivity.verificationPlayVideo(entityCourse.getId());
+        courseDetailsActivity.play("c538856ddebaa3bf5d018909dd21746a_c",0,true,false);
         return false;
     }
 }

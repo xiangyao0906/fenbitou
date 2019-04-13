@@ -26,7 +26,7 @@ import com.easefun.polyvsdk.RestVO;
 import com.easefun.polyvsdk.download.listener.IPolyvDownloaderProgressListener;
 import com.easefun.polyvsdk.vo.PolyvVideoVO;
 import com.fenbitou.bl.activity.PolyvMainActivity;
-import com.fenbitou.bl.activity.PolyvPlayerActivity;
+import com.fenbitou.bl.activity.BLLocalVideoActivity;
 import com.fenbitou.bl.bean.PolyvDownloadInfo;
 import com.fenbitou.bl.database.PolyvDownloadSQLiteHelper;
 import com.fenbitou.bl.player.PolyvAnimateFirstDisplayListener;
@@ -118,7 +118,7 @@ public class PolyvOnlineListViewAdapter extends AbsRecyclerViewAdapter {
         public void onClick(View arg0) {
 
 
-            Intent intent = PolyvPlayerActivity.newIntent(context, PolyvPlayerActivity.PlayMode.portrait, vid);
+            Intent intent = BLLocalVideoActivity.newIntent(context, BLLocalVideoActivity.PlayMode.portrait, vid);
             intent.putExtra(PolyvMainActivity.IS_VLMS_ONLINE, false);
             context.startActivity(intent);
         }

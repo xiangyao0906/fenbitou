@@ -41,16 +41,6 @@
                 android:textColor="@color/color_67"
                 android:textSize="@dimen/x12" />
         </LinearLayout>
-
-        <TextView
-            android:id="@+id/course_isfree"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:text="@string/isFree"
-            android:textColor="@color/Red"
-            android:visibility="gone" />
     </RelativeLayout>
 
     <View
