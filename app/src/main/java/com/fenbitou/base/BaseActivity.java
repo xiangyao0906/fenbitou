@@ -1,5 +1,6 @@
 package com.fenbitou.base;
 
+import android.app.Activity;
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -13,9 +14,11 @@ import android.widget.TextView;
 
 import com.aspsine.swipetoloadlayout.OnLoadMoreListener;
 import com.aspsine.swipetoloadlayout.OnRefreshListener;
+import com.fenbitou.fragment.LoadingFragmentDialog;
 import com.fenbitou.wantongzaixian.LoginActivity;
 import com.fenbitou.wantongzaixian.R;
 import com.fenbitou.utils.SharedPreferencesUtils;
+import com.gyf.barlibrary.ImmersionBar;
 import com.zhy.autolayout.AutoLayoutActivity;
 
 import butterknife.ButterKnife;
@@ -28,7 +31,7 @@ import butterknife.ButterKnife;
 
 public abstract class BaseActivity extends AutoLayoutActivity implements AdapterView.OnItemClickListener, OnRefreshListener, OnLoadMoreListener {
 
-    private  ProgressDialog dialog = null;
+    private LoadingFragmentDialog loadingDialog = null;
     private int userId;
     private Dialog quitDialog;
 
@@ -41,8 +44,11 @@ public abstract class BaseActivity extends AutoLayoutActivity implements Adapter
 
         setContentView(initContentView());
 
+        loadingDialog = new LoadingFragmentDialog();
+
         ButterKnife.bind(this);
 
+        ImmersionBar.with(this).statusBarDarkFont(true).navigationBarEnable(false).init();
         initComponent();
 
         initData();
@@ -84,22 +90,16 @@ public abstract class BaseActivity extends AutoLayoutActivity implements Adapter
      */
     protected abstract void addListener();
 
-    public void showLoading(Context context) {
-        if (dialog == null) {
-            dialog = new ProgressDialog(this);
-            dialog.setMessage("请稍后...");
-            dialog.setCanceledOnTouchOutside(false);
-            dialog.show();
-        }else{
-            dialog.show();
+    public void showLoading(Activity context) {
+        if(loadingDialog==null){
+            loadingDialog=new LoadingFragmentDialog();
         }
-    }
+        loadingDialog.show(context.getFragmentManager(), "请稍后");
 
+    }
     public void cancelLoading() {
-        if (dialog != null && dialog.isShowing()) {
-            dialog.dismiss();
-            dialog = null;
-        }
+        loadingDialog.dismiss();
+
     }
 
     public void openActivity(Class<?> targetActivityClass) {
@@ -131,9 +131,7 @@ public abstract class BaseActivity extends AutoLayoutActivity implements Adapter
     @Override
     public void onRefresh() {
         userId = (int) SharedPreferencesUtils.getParam(this, "userId", -1);
-        if (dialog != null && userId != 0 && dialog.isShowing()) {
-            dialog.dismiss();
-        }
+
     }
 
     @Override
@@ -200,9 +198,6 @@ public abstract class BaseActivity extends AutoLayoutActivity implements Adapter
     @Override
     protected void onPause() {
         super.onPause();
-        if (dialog != null && dialog.isShowing()) {
-            dialog.dismiss();
-            dialog = null;
-        }
+        loadingDialog.dismiss();
     }
 }

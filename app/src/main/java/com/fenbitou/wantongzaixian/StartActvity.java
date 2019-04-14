@@ -50,7 +50,7 @@ public class StartActvity extends BaseActivity {
             if (!isFrist) {  //是第一次进入程序,跳入到导航页
                 intent.setClass(StartActvity.this, GuideActivity.class);
             } else {  //不是第一次进入程序,跳入到主页
-                intent.setClass(StartActvity.this, MainActivity.class);
+                intent.setClass(StartActvity.this, NewMainActivity.class);
             }
             startActivity(intent);
             finish();

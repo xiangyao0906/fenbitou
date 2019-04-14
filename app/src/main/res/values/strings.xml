@@ -16,9 +16,9 @@
     <string name="new_user_register">新用户注册</string>
 
     <string name="home">推荐</string>
-    <string name="course">发现</string>
-    <string name="download">下载</string>
-    <string name="record">记录</string>
+    <string name="course">课程</string>
+    <string name="home_mine">我的</string>
+    <string name="home_community">社区</string>
     <string name="live">直播</string>
 
 
@@ -221,6 +221,9 @@
     <string name="answer_right">回答正确</string>
     <string name="answer_wrong">回答错误</string>
     <string name="no_choice">您还未选择任何答案</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

@@ -142,7 +142,6 @@ public class BLCourseDetailsActivity extends BaseActivity {
     private PublicEntity publicEntity;
     private boolean fav = true; // 是否收藏过(没收藏)
     //联网数据相关
-    private boolean hasComment = false;//是否有评论模块
     private int parentId; //传递到DownSelect中的id
 
 
@@ -815,7 +814,6 @@ public class BLCourseDetailsActivity extends BaseActivity {
     @Override
     protected void initData() {
         getIntentMessage();
-        backstageSwitch();
         getCourseDetails();
     }
 
@@ -838,11 +836,7 @@ public class BLCourseDetailsActivity extends BaseActivity {
                         textViewList.get(position).setTextColor(getResources().getColor(R.color.white));
                         break;
                     case 1:
-                        if (hasComment) {
-                            textViewList.get(position).setBackgroundResource(R.drawable.details_center);
-                        } else {
-                            textViewList.get(position).setBackgroundResource(R.drawable.details_right);
-                        }
+                        textViewList.get(position).setBackgroundResource(R.drawable.details_center);
                         textViewList.get(position).setTextColor(getResources().getColor(R.color.white));
                         break;
                     case 2:
@@ -896,11 +890,7 @@ public class BLCourseDetailsActivity extends BaseActivity {
                 break;
             case R.id.course_zhang: // 课程章节
                 setTextViewBackGround();
-                if (hasComment) {
-                    textViewList.get(1).setBackgroundResource(R.drawable.details_center);
-                } else {
-                    textViewList.get(1).setBackgroundResource(R.drawable.details_right);
-                }
+                textViewList.get(1).setBackgroundResource(R.drawable.details_center);
                 textViewList.get(1).setTextColor(getResources().getColor(R.color.white));
                 viewPager.setCurrentItem(1, false);
                 break;
@@ -918,45 +908,11 @@ public class BLCourseDetailsActivity extends BaseActivity {
                 intent.putExtra("courseId", courseId);
                 startActivity(intent);
                 break;
+            default:
+                break;
         }
     }
 
-    // 是否能分享 评论
-    private void backstageSwitch() {
-        OkHttpUtils.get().url(Address.WEBSITE_VERIFY_LIST).build().execute(
-                new PublicEntityCallback() {
-                    @Override
-                    public void onError(Call call, Exception e, int id) {
-
-                    }
-
-                    @Override
-                    public void onResponse(PublicEntity response, int id) {
-                        try {
-                            if (response.isSuccess()) {
-                                EntityPublic entity = response.getEntity();
-                                String verifyTranspond = entity.getVerifyTranspond();
-                                String verifyCourseDiscuss = entity.getVerifyCourseDiscuss();
-                                if (verifyTranspond.equals("ON")) {
-                                    layoutList.get(2).setVisibility(View.VISIBLE);
-                                } else {
-                                    layoutList.get(2).setVisibility(View.GONE);
-                                }
-                                if (verifyCourseDiscuss.equals("ON")) {
-                                    hasComment = true;
-                                    textViewList.get(2).setVisibility(View.VISIBLE);
-                                    textViewList.get(1).setBackgroundResource(R.drawable.details_center_null);
-                                } else {
-                                    hasComment = false;
-                                    textViewList.get(2).setVisibility(View.GONE);
-                                }
-                            }
-                        } catch (Exception e) {
-                        }
-                    }
-                }
-        );
-    }
 
     /**
      * 课程详情
@@ -1011,9 +967,7 @@ public class BLCourseDetailsActivity extends BaseActivity {
                                 bundle.putSerializable("entity", entity);
                                 courseIntroduceFragment.setArguments(bundle);
                                 courseDirectoryFragment.setArguments(bundle);
-                                if (hasComment) {
-                                    courseCommentFragment.setArguments(bundle);
-                                }
+                                courseCommentFragment.setArguments(bundle);
                                 viewPagerAdapter.notifyDataSetChanged();
                                 List<EntityPublic> list = publicEntity.getEntity().getCoursePackageList();
                                 parentId = list.get(0).getId();
@@ -1147,14 +1101,10 @@ public class BLCourseDetailsActivity extends BaseActivity {
 
     private void setTextViewBackGround() {
         textViewList.get(0).setBackgroundResource(R.drawable.details_left_null);
-        if (hasComment) {
-            textViewList.get(1).setBackgroundResource(R.drawable.details_center_null);
-        } else {
-            textViewList.get(1).setBackgroundResource(R.drawable.details_right_null);
-        }
+        textViewList.get(1).setBackgroundResource(R.drawable.details_center_null);
         textViewList.get(2).setBackgroundResource(R.drawable.details_right_null);
         for (TextView tv : textViewList) {
-            tv.setTextColor(getResources().getColor(R.color.color_main));
+            tv.setTextColor(getResources().getColor(R.color.color_3e83e5));
         }
     }
 
@@ -1163,10 +1113,8 @@ public class BLCourseDetailsActivity extends BaseActivity {
         courseDirectoryFragment = new CourseDirectoryFragment();
         fragments.add(courseIntroduceFragment);
         fragments.add(courseDirectoryFragment);
-        if (hasComment) {
-            courseCommentFragment = new CourseCommentFragment();
-            fragments.add(courseCommentFragment);
-        }
+        courseCommentFragment = new CourseCommentFragment();
+        fragments.add(courseCommentFragment);
     }
 
     /**

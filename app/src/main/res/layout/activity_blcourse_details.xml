@@ -381,10 +381,10 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/details_right_null"
+                android:background="@drawable/details_center_null"
                 android:gravity="center"
                 android:text="@string/course_zhang"
-                android:textColor="@color/color_main" />
+                android:textColor="@color/color_3e83e5" />
 
             <TextView
                 android:id="@+id/course_discuss"
@@ -394,8 +394,8 @@
                 android:background="@drawable/details_right_null"
                 android:gravity="center"
                 android:text="@string/course_discuss"
-                android:textColor="@color/color_main"
-                android:visibility="gone" />
+                android:textColor="@color/color_3e83e5"
+            />
         </LinearLayout>
 
         <View

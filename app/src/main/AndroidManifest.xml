@@ -26,6 +26,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:label">
+        <activity android:name=".NewMainActivity"></activity>
         <activity
             android:name=".BLCourseDetailsActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
@@ -37,7 +38,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity
             android:name="com.fenbitou.bl.activity.BLLocalVideoActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
@@ -70,6 +70,13 @@
         <meta-data
             android:name="design_height"
             android:value="1280" /> <!-- shareSDK -->
+
+        <meta-data
+            android:name="design_width_in_dp"
+            android:value="360"/>
+        <meta-data
+            android:name="design_height_in_dp"
+            android:value="1280"/>
         <meta-data
             android:name="Mob-AppKey"
             android:value="20492c2ab9b84" />
@@ -361,8 +368,7 @@
             android:name="com.fenbitou.bl.activity.PolyvMainActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:label="@string/app_name"
-            android:screenOrientation="portrait"></activity>
-
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.fenbitou.bl.activity.PolyvOnlineVideoActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"

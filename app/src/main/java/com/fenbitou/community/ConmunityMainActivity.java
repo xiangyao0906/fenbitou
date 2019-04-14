@@ -224,6 +224,7 @@ public class ConmunityMainActivity extends BaseActivity {
         progressDialog.show();
     }
 
+    @Override
     public void cancelLoading() {
         progressDialog.dismiss();
         progressDialog = null;
