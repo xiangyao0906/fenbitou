@@ -22,6 +22,7 @@ import com.fenbitou.fragment.CommunityFragment;
 import com.fenbitou.fragment.HomeFragment;
 import com.fenbitou.fragment.LiveHomePageFragment;
 import com.fenbitou.fragment.MineFragment;
+import com.fenbitou.fragment.NewHomeFragment;
 import com.fenbitou.utils.Address;
 import com.fenbitou.utils.GlideUtil;
 import com.fenbitou.utils.ILog;
@@ -155,7 +156,7 @@ public class NewMainActivity extends BaseActivity implements RadioGroup.OnChecke
 
     private void initFragment() {
         //首页
-        HomeFragment homeFragment = new HomeFragment();
+        NewHomeFragment homeFragment = new NewHomeFragment();
         // 课程列表
         CourseFragment courseFragment = new CourseFragment();
         //学习记录
@@ -196,7 +197,7 @@ public class NewMainActivity extends BaseActivity implements RadioGroup.OnChecke
         } else {
             ft.show(mFragments[index]);
         }
-        ft.commit();
+        ft.commitAllowingStateLoss();
         //再次赋值
         mIndex = index;
 

@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.lsjwzh:materialloadingprogressbar:0.5.8-RELEASE@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/materialloadingprogressbar-0.5.8-RELEASE.aar/089bb2b568891ad7a81ce9980623ee0b/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/materialloadingprogressbar-0.5.8-RELEASE.aar/fdb43577bf9c88390180b0caff467a1a/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/materialloadingprogressbar-0.5.8-RELEASE.aar/089bb2b568891ad7a81ce9980623ee0b/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/materialloadingprogressbar-0.5.8-RELEASE.aar/089bb2b568891ad7a81ce9980623ee0b/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/materialloadingprogressbar-0.5.8-RELEASE.aar/fdb43577bf9c88390180b0caff467a1a/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/materialloadingprogressbar-0.5.8-RELEASE.aar/fdb43577bf9c88390180b0caff467a1a/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

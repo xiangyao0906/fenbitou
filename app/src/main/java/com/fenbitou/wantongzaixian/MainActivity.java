@@ -334,7 +334,7 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
                 } else { // 两次按键小于2秒时，退出应用
                     if (userId != 0) {
                         // 添加使用记录的方法
-                        // addApplyRecord(userId, 2);
+                        // addApplyRecord(usxerId, 2);
                     }
                     //退出下载服务
                     DemoApplication.getInstance().getActivityStack().AppExit();

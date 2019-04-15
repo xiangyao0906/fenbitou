@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.easefun.polyv:polyvPlayer:2.7.3@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/polyvPlayer-2.7.3.aar/e6e4dc448b346cde7c084f07c662286c/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/polyvPlayer-2.7.3.aar/175ebfb168ad7c45c44790a8139cfe4a/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/polyvPlayer-2.7.3.aar/e6e4dc448b346cde7c084f07c662286c/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/polyvPlayer-2.7.3.aar/e6e4dc448b346cde7c084f07c662286c/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/polyvPlayer-2.7.3.aar/175ebfb168ad7c45c44790a8139cfe4a/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/polyvPlayer-2.7.3.aar/175ebfb168ad7c45c44790a8139cfe4a/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

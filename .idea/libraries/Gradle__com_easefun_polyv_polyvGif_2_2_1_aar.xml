@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.easefun.polyv:polyvGif:2.2.1@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/polyvGif-2.2.1.aar/93e360dbff1d18341e2d0019cc0b5cb0/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/polyvGif-2.2.1.aar/93e360dbff1d18341e2d0019cc0b5cb0/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/polyvGif-2.2.1.aar/0ace7767668e27296d941446d7b01122/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/polyvGif-2.2.1.aar/0ace7767668e27296d941446d7b01122/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

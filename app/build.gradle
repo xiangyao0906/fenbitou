@@ -122,4 +122,7 @@ dependencies {
     implementation 'com.easefun.polyv:polyvSub:2.7.3'//弹幕、截图功能中使用
     implementation 'me.jessyan:autosize:1.1.2'
     implementation 'com.gyf.barlibrary:barlibrary:2.3.0'
+    //没有使用特殊Header，可以不加这行
+    implementation 'com.youth.banner:banner:1.4.10'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.41'
 }

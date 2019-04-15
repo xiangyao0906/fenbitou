@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.zzhoujay.richtext:richtext:3.0.7@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/richtext-3.0.7.aar/99cac1f5aeae23013d185542fa819e89/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/richtext-3.0.7.aar/0ce642c82e8b1814ad0720d0af6dc8c3/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/richtext-3.0.7.aar/99cac1f5aeae23013d185542fa819e89/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/richtext-3.0.7.aar/99cac1f5aeae23013d185542fa819e89/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/richtext-3.0.7.aar/0ce642c82e8b1814ad0720d0af6dc8c3/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/richtext-3.0.7.aar/0ce642c82e8b1814ad0720d0af6dc8c3/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

@@ -5,19 +5,20 @@ package com.fenbitou.utils;
  */
 public class Address {
     // 主域名
-    public static String HOST = "http://t.268xue.com/app/";
+//    public static String HOST = "http://t.268xue.com/app/";
+    public static String HOST = "http://www.wintopkaoyan.com/app/";
     // 访问图片
-    public static String IMAGE_NET = "http://static.268xue.com";
+    public static String IMAGE_NET = "http://static.wintopkaoyan.com";
     // 上传图片
-    public static String UP_IMAGE_NET = "http://image.268xue.com/goswf";
+    public static String UP_IMAGE_NET = "http://image.wintopkaoyan.com/goswf";
     // 分享的域名
-    public static String HOST_SHARE = "http://t.268xue.com/";
+    public static String HOST_SHARE = "http://t.wintopkaoyan.com/";
 
 
     //分享关于我们
     public static String MOBILE_INDEX = HOST_SHARE + "mobile/index";
     // 支付异步回掉的域名
-    public static String HOST_PAY = "http://t.268xue.com/";
+    public static String HOST_PAY = "http://t.wintopkaoyan.com/";
     // 注册接口
     public static String REGISTER = HOST + "register.json";
     // 登录接口
