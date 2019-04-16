@@ -22,5 +22,8 @@ public class HomeTabsAdapter extends BaseQuickAdapter<HomeTabEntity, BaseViewHol
         helper.setText(R.id.tab_text,item.getTabText());
 
 
+        helper.addOnClickListener(R.id.rootLayout);
+
+
     }
 }

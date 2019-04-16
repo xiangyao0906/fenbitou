@@ -81,6 +81,24 @@ public class GlideUtil {
      * @param url
      * @param imageView
      */
+    public static void loadRoundedImage(Context context, String url, ImageView imageView,int radios) {
+        Glide.with(context)
+                .load(url)
+                .diskCacheStrategy(DiskCacheStrategy.NONE)
+                .placeholder(R.drawable.defined_image) //设置占位图，在加载之前显示
+                .error(R.drawable.defined_image) //在图像加载失败时显示
+                .fallback(R.drawable.defined_image)
+                .bitmapTransform(new RoundedCornersTransformation(context, radios, 0, RoundedCornersTransformation.CornerType.ALL))
+                .crossFade()
+                .into(imageView);
+    }
+    /**
+     * 加载圆角图片
+     *
+     * @param context
+     * @param url
+     * @param imageView
+     */
     public static void loadRoundedImage(Context context, String url, ImageView imageView) {
         Glide.with(context)
                 .load(url)
