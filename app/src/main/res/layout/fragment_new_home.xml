@@ -6,98 +6,168 @@
     android:descendantFocusability="blocksDescendants"
     android:orientation="vertical">
 
-        <android.support.v4.widget.NestedScrollView
-            android:fillViewport="true"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scrollbars="none">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
 
-<LinearLayout
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="144dp"
-            android:gravity="center">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="144dp"
+                android:gravity="center">
 
                 <com.youth.banner.Banner
                     android:id="@+id/youthBanner"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     app:image_scale_type="fit_xy"
-                    app:indicator_margin="7dp"/>
+                    app:indicator_margin="7dp" />
 
-        </LinearLayout>
+            </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="100dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/tabs"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
-        </LinearLayout>
-        <TextView
-            android:background="@color/color_f5"
-            android:layout_width="match_parent"
-            android:layout_height="9dp" />
+                    android:layout_height="match_parent" />
+            </LinearLayout>
 
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="9dp"
+                android:background="@color/color_f5" />
 
-               <LinearLayout
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content">
-                       <LinearLayout
-                           android:gravity="center_vertical"
-                           android:layout_width="0dp"
-                           android:layout_weight="1"
-                           android:layout_height="40dp">
-                               <TextView
-                                   android:layout_marginLeft="10dp"
-                                   android:text="热门课程"
-                                   android:layout_width="wrap_content"
-                                   android:layout_height="wrap_content" />
-                       </LinearLayout>
-                       <RelativeLayout
-                           android:layout_width="0dp"
-                           android:layout_weight="1"
-                           android:layout_height="match_parent">
-                               <TextView
-                                   android:layout_toLeftOf="@id/temp"
-                                   android:layout_centerVertical="true"
-                                   android:text="更多"
-                                   android:layout_width="wrap_content"
-                                   android:layout_height="wrap_content" />
-                               <ImageView
-                                   android:layout_marginRight="20dp"
-                                   android:id="@+id/temp"
-                                   android:layout_alignParentRight="true"
-                                   android:layout_marginLeft="10dp"
-                                   android:layout_centerVertical="true"
-                                   android:background="@drawable/home_more"
-                                   android:layout_width="wrap_content"
-                                   android:layout_height="wrap_content" />
-                       </RelativeLayout>
-               </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="热门课程" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/temp"
+                            android:text="更多" />
+
+                        <ImageView
+                            android:id="@+id/temp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/home_more" />
+                    </RelativeLayout>
+                </LinearLayout>
 
                 <android.support.v7.widget.RecyclerView
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
                     android:id="@+id/home_course_recycleview"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+            </LinearLayout>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="9dp"
+                android:background="@color/color_f5" />
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="近期直播" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/temp2"
+                            android:text="更多" />
+
+                        <ImageView
+                            android:id="@+id/temp2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/home_more" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <android.support.v4.view.ViewPager
+                    android:layout_marginLeft="11dp"
+                    android:id="@+id/recommend_live"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp" />
+
+                <net.lucode.hackware.magicindicator.MagicIndicator
+                    android:id="@+id/magic_indicator3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/center_bottom_sb_pg_color_blue" />
         </LinearLayout>
-        <LinearLayout
-            android:background="@color/center_bottom_sb_pg_color_blue"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-</LinearLayout>
-        </android.support.v4.widget.NestedScrollView>
+    </android.support.v4.widget.NestedScrollView>
 </LinearLayout>

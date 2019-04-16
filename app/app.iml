@@ -222,10 +222,5 @@
     <orderEntry type="module" module-name="okhttputils" />
     <orderEntry type="module" module-name="magicindicator" />
     <orderEntry type="library" name="Gradle: org.apache.http.legacy-android-27" level="project" />
-    <orderEntry type="module" module-name="sliderLibrary" />
-    <orderEntry type="module" module-name="nicedialog" />
-    <orderEntry type="module" module-name="swipeToLoadLayout" />
-    <orderEntry type="module" module-name="okhttputils" />
-    <orderEntry type="module" module-name="magicindicator" />
   </component>
 </module>
